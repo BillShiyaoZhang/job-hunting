@@ -1,0 +1,33 @@
+name: 推荐招聘信息源
+description: 推荐尚未覆盖的公司招聘官网、招聘平台或公开岗位订阅。
+title: "[信息源] "
+body:
+  - type: markdown
+    attributes:
+      value: 维护者会评估信息源的覆盖范围与访问条件。请勿提供账号、密码、Cookie 或令牌，也不要建议绕过登录或验证码。
+  - type: input
+    id: source-name
+    attributes:
+      label: 网站或公司名称
+      placeholder: 例如：某公司招聘官网
+    validations:
+      required: true
+  - type: input
+    id: source-url
+    attributes:
+      label: 公开招聘页链接
+      placeholder: https://example.com/careers
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: 有哪些值得收录的机会？
+      placeholder: 说明岗位方向、城市、远程范围，或它与已有信息源的差异。
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 访问条件与补充说明（选填）
+      placeholder: 是否需要登录？是否提供公开 API 或 RSS？可附公开的说明链接。

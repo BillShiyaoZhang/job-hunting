@@ -1,0 +1,32 @@
+name: 补充岗位需求
+description: 没有找到理想岗位？告诉我们你希望补充的职位方向与工作地点。
+title: "[岗位需求] "
+body:
+  - type: markdown
+    attributes:
+      value: 请先搜索已有 Issue。这里只收集岗位方向，不需要上传简历、联系方式或其他个人敏感信息；提交内容公开可见。
+  - type: input
+    id: roles
+    attributes:
+      label: 想找的岗位或技能关键词
+      placeholder: 例如：后端开发、Python、机器学习工程师
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: 城市与远程偏好
+      placeholder: 例如：上海 / 杭州，或中国大陆可申请的远程岗位
+    validations:
+      required: true
+  - type: input
+    id: experience
+    attributes:
+      label: 经验或职级范围（选填）
+      placeholder: 例如：应届、1–3 年、中高级
+  - type: textarea
+    id: context
+    attributes:
+      label: 已尝试的筛选与仍缺少的岗位（选填）
+      description: 网站可能已带入当前筛选条件，请检查后补充；不保证所有需求都能找到匹配岗位。
+      placeholder: 搜索了什么、哪里还不够，以及可公开的参考岗位链接。

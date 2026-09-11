@@ -1,0 +1,37 @@
+name: 报告数据或网站问题
+description: 报告岗位信息错误、失效链接、筛选异常或其他网站问题。
+title: "[问题反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: 请描述可核实的问题。Issue 内容公开可见，请勿包含简历、联系方式或登录凭据；“待复核”不等于岗位已下架。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 岗位信息错误
+        - 岗位链接失效
+        - 页面或筛选异常
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 相关页面或岗位原文链接（选填）
+      description: 从岗位详情进入时会自动带入，请核对。
+      placeholder: https://...
+  - type: textarea
+    id: problem
+    attributes:
+      label: 实际问题与期望结果
+      placeholder: 哪条信息有误？点击了什么？你期望发生什么、实际发生了什么？
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 相关岗位、复现步骤、浏览器或截图（选填）
+      description: 网站可能已带入岗位标题、公司和来源；可补充访问时间及复现步骤。
+      placeholder: 截图中请遮盖个人信息；请勿仅以长时间未核验推断岗位已下架。

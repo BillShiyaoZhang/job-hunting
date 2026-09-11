@@ -2,11 +2,11 @@
 
 可托管在 **GitHub Pages** 的招聘岗位整合站点，配套 **GitHub Actions + Codex 定时任务** 数据流水线。前端是原生 HTML/CSS/JavaScript，后端使用 Python 标准库，无数据库、无付费 API 依赖、无需 npm install。
 
-**运行状态：已上线真实数据。** [打开工作雷达](https://billshiyaozhang.github.io/job-hunting/)。私有源码仓库为 `BillShiyaoZhang/job-hunting`；仅 `dist/` 发布到公开网页。默认范围：中国大陆技术岗，兼顾全球/亚洲可申请远程岗。GitHub Actions 每日北京时间 09:37 刷新；Codex 每日 09:10 核验受支持的浏览器来源并交接批次。详见 [运行说明](docs/automation.md)。
+**运行状态：已上线真实数据。** [打开工作雷达](https://billshiyaozhang.github.io/job-hunting/)。用户已将 `BillShiyaoZhang/job-hunting` 设为公开仓库，访客可以通过 GitHub Issues 反馈；Pages 仅发布 `dist/`。默认范围：中国大陆技术岗，兼顾全球/亚洲可申请远程岗。GitHub Actions 每日北京时间 09:37 刷新；Codex 每日 09:10 核验受支持的浏览器来源并交接批次。详见 [运行说明](docs/automation.md)。
 
 ## 本地打开
 
-站点默认打开介绍首页，包含使用步骤和统一配置入口。「岗位发现」可直接进入岗位列表；「检索配置 → 完整 JSON 配置」可编辑全部关键词、来源与策略的浏览器草稿。自动采集最终读取的文件始终是 `config/search.json`。
+站点默认打开介绍首页，包含使用步骤和反馈入口。「岗位发现」提供当前数据集内的筛选；公开网页不提供检索配置、来源管理或配置草稿功能。
 
 Windows PowerShell，在项目目录运行：
 
@@ -28,13 +28,36 @@ python -m http.server 8765 --bind 127.0.0.1 --directory dist
 ## 已包含的能力
 
 - **岗位发现**：关键词搜索、地点/来源/远程方式/状态筛选、排序、分页、岗位详情和原文跳转。
-- **招聘来源**：添加或编辑来源、启停开关、接口参数、来源专属检索策略。
-- **检索配置**：关键词、排除词、地点、任意/全部匹配、检索字段、结果与页数上限、时效、超时、重试和请求间隔；支持 JSON 导入导出。
+- **访客反馈**：岗位需求、功能建议、招聘信息源建议、数据或网站问题四类 GitHub Issue 表单；空结果和岗位详情可带入相关信息。
+- **维护者配置**：通过 `config/search.json` 管理来源、关键词、地点、匹配规则、默认策略与网站专属策略。
 - **数据流水线**：腾讯官网、Greenhouse、Lever、Remotive、RSS/Atom、JSON-LD 职位页、Codex 核验批次；数据校验、URL 去重、来源溯源、旧批次重放保护、失败保留和复核期限。
 - **运行记录**：每个来源的采集状态、读取/入选数量和问题说明，保留最近 30 次记录。
 - **自动化运行**：只读 CI、每日刷新工作流、手动发布工作流、Codex 定时任务及专用副本批次推送。
 
-网页中的配置保存为**浏览器本地草稿**，不会更改 GitHub 仓库或启动采集。导出 `search.json`，替换仓库的 `config/search.json`，再运行校验，才能供后端采用。不要把密码、Cookie 或令牌放入配置；构建后的配置公开可读。
+## 反馈岗位需求与建议
+
+先[查看已有 Issue](https://github.com/BillShiyaoZhang/job-hunting/issues)，避免重复，再选择对应表单：
+
+- [没有找到理想岗位](https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=01-job-request.yml)：岗位或技能、城市与远程偏好、经验范围。
+- [提出功能建议](https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=02-feature-request.yml)：当前困难、期望行为、使用场景。
+- [推荐招聘信息源](https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=03-source-request.yml)：名称、公开招聘页链接、岗位覆盖与访问条件。
+- [报告数据或网站问题](https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=04-problem-report.yml)：问题类型、相关链接、实际问题与复现信息。
+
+需要登录 GitHub 账号，内容公开可见。页面只打开预填表单，不会自动提交 Issue。请勿附简历、联系方式或登录凭据；维护者会评估建议，Issue 不会直接修改配置、启动采集或保证收录。
+
+## 维护者：统一搜索配置
+
+唯一入口是 **[config/search.json](config/search.json)**，由有仓库写权限的维护者修改：
+
+| 字段 | 管理内容 |
+| --- | --- |
+| `search` | 关键词 `keywords`、排除词 `exclude_keywords`、地点 `locations` |
+| `defaults` | 匹配方式、检索字段、分页/结果上限、时效、超时、重试、请求间隔 |
+| `sources` | 网站/公司来源、`enabled` 启停、接口参数及每来源 `strategy` 覆盖 |
+
+修改后运行 `python -m jobradar validate` 和 `python -m jobradar plan`，检查最终策略，再提交到 main；配置文件推送会触发 Actions 刷新与发布。来源专属策略优先于全局配置，完整规则见 [配置文档](docs/configuration.md)。
+
+`dist/data/config.json` 是 build 同步的公开副本，请勿直接修改；网页不再读取它，也不读取旧版浏览器配置草稿。不要把密码、Cookie 或令牌放入配置。
 
 ## 命令
 
@@ -48,15 +71,15 @@ python -m http.server 8765 --bind 127.0.0.1 --directory dist
 | `python -m jobradar build --production` | 正式构建，拒绝示例数据 |
 | `python -m jobradar demo` | 重建示例；默认不会覆盖正式数据 |
 | `python -m unittest discover -s tests -v` | 后端离线测试 |
-| `node --test tests/frontend.test.mjs` | 前端筛选及配置测试，需要 Node 20+ |
+| `node --test tests/frontend.test.mjs` | 前端筛选、导航与反馈链接测试，需要 Node 20+ |
 | `python scripts/check_site.py` | 检查静态文件清单和子路径兼容性 |
 
 Windows 也可运行 `.\scripts\local.ps1 validate`、`plan`、`demo`、`collect`、`build`、`test`。使用其他配置时，将全局参数写在子命令之前：`python -m jobradar --config config/my-search.json plan`。
 
 ## 如何开始真实检索
 
-1. 在「招聘来源」编辑目标来源。公开招聘板填写真实公司标识；BOSS、猎聘等使用 Codex 策略。
-2. 在「检索配置」设置自己的关键词和地点，保存并导出配置到 `config/search.json`。
+1. 维护者在 `config/search.json` 的 `sources` 编辑目标来源。公开招聘板填写真实公司标识；BOSS、猎聘等使用 Codex 策略。
+2. 在同一文件的 `search`、`defaults` 或来源 `strategy` 中设置关键词、地点和检索策略。
 3. 运行 `validate` 和 `plan`，确认启用的来源和最终策略。
 4. API/订阅源运行 `collect`；Codex 来源按任务模板核验岗位，然后 `import` 批次，再 `collect`。
 5. 运行 `build` 并刷新本地页面。此过程不部署。
@@ -93,6 +116,7 @@ flowchart LR
 | `data/inbox/` | Codex 核验批次；`example.json` 永远不导入 |
 | `data/runs/` | 最新运行与最近 30 次历史 |
 | `.github/workflows/` | CI、数据刷新与手动 Pages 发布 |
+| `.github/ISSUE_TEMPLATE/` | 四类访客反馈表单与模板选择器设置 |
 | `automation/codex-task.md` | 可复制到 Codex 的完整定时任务提示词 |
 | `automation/task-preset.json` | 已启用任务的参数与 ID 记录；实际由 Codex 管理 |
 | `scripts/sync_inbox.py` | 在专用副本中校验并推送 Codex 批次，不包含用户无关改动 |

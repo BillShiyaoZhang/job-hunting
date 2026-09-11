@@ -1,6 +1,6 @@
 # 工作雷达：Codex 定时任务提示词
 
-用户已明确授权每日 09:10（Asia/Shanghai）执行核验并向私有仓库 `BillShiyaoZhang/job-hunting` 推送本轮岗位批次。GitHub Actions 每日 09:37 及收到 inbox 推送时处理数据，Pages 公开展示静态结果。禁止扩大目的仓库或提高零额外支出预算。
+用户已明确授权每日 09:10（Asia/Shanghai）执行核验并向仓库 `BillShiyaoZhang/job-hunting` 推送本轮岗位批次。用户随后自行将该仓库设为公开，Agent 不得修改可见性。GitHub Actions 每日 09:37 及收到 inbox 推送时处理数据，Pages 公开展示静态结果。禁止扩大目的仓库或提高零额外支出预算。
 
 ---
 

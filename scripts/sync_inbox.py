@@ -1,7 +1,7 @@
 """Validate and hand off Codex batches using a dedicated, clean checkout.
 
 Uses existing Git authentication. Never stores credentials, force pushes, stashes,
-or commits unrelated work. The destination is the user-authorized private repo.
+or commits unrelated work. The destination is the user-authorized project repo.
 """
 import argparse
 import json

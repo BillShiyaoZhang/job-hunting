@@ -3,7 +3,7 @@
 ## 当前运行状态
 
 - 线上网页：https://billshiyaozhang.github.io/job-hunting/
-- 源码仓库：`BillShiyaoZhang/job-hunting`，保持 private；仅 `dist/` 的静态网页和公开岗位数据发布到 Pages。
+- 源码仓库：`BillShiyaoZhang/job-hunting`，用户已自行设为 public 并开放 Issues；Pages 仅发布 `dist/`。
 - 用户已明确授权启动运行、定时采集、Codex 核验与批次推送。
 - GitHub Actions：每日北京时间 **09:37**（UTC 01:37）；inbox/config 推送也会触发刷新。
 - Codex：每日北京时间 **09:10**，本任务 heartbeat，自动化 ID 记录在 `automation/task-preset.json`。
@@ -14,7 +14,7 @@
 
 无需 API Key，没有购买、注册付费 API 或开启 OpenAI API 调用。腾讯、公司 ATS 和 Remotive 均使用免费公开数据。
 
-启用前已在用户登录的 GitHub 页面确认现有免费 Pro 权益，以及账户级 Actions 额外预算 **$0 / Stop usage Yes**；这些限制没有提高。免费额度耗尽后可能停跑，不能为了继续运行自动升级或充值。源码私有不代表 Pages 网页私有；当前用户已明确授权公开静态网页。
+启用前已在用户登录的 GitHub 页面确认现有免费 Pro 权益，以及账户级 Actions 额外预算 **$0 / Stop usage Yes**；这些限制没有提高。额度或预算限制导致停跑时，不能为了继续运行自动升级或充值。用户已授权公开静态网页，并随后自行公开源码仓库。
 
 [GitHub Actions 计费](https://docs.github.com/en/billing/concepts/product-billing/github-actions) · [预算与停止使用](https://docs.github.com/en/billing/how-tos/set-up-budgets) · [Pages 支持条件](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
@@ -70,7 +70,7 @@ Codex 本地任务需要电脑开机、App 运行及项目路径可用；关闭 
 
 ## 修改配置与排错
 
-- 网页配置是浏览器草稿：导出 search.json，替换仓库 `config/search.json`，校验并提交后才影响采集。
+- 网页不提供配置：维护者修改仓库 `config/search.json`，校验并提交后才影响采集；Issue 仅收集建议，不会直接执行修改或刷新。
 - 运行记录显示 cached：来源在最短抓取间隔内，复用近期结果，last_seen 不会假装刷新。
 - 页面保留旧岗位：失败保留机制；查看 Actions 的本次附件和错误步骤。
 - 本机采集提示“解析到非公开地址”：某些透明代理使用保留地址映射。当前由 GitHub runner 抓取，保持网络校验，不关闭校验或绕过安全代理设置。

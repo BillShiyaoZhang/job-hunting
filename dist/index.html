@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="工作雷达：聚合中国大陆技术岗与远程机会。设置关键词和招聘来源，定期更新，在一个地方筛选岗位并查看招聘原文。">
+  <meta name="description" content="工作雷达：聚合中国大陆技术岗与远程机会。定期汇集岗位，在一个地方筛选机会、查看招聘原文，并反馈你的需求与建议。">
   <meta name="theme-color" content="#132b2b">
   <title>工作雷达 · 首页</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
@@ -18,9 +18,8 @@
     <nav aria-label="主导航">
       <a href="#home" data-view="home" class="nav-item active" aria-current="page"><span aria-hidden="true">◎</span>首页</a>
       <a href="#discover" data-view="discover" class="nav-item"><span aria-hidden="true">▦</span>岗位发现<span id="nav-count" class="nav-count">—</span></a>
-      <a href="#sources" data-view="sources" class="nav-item"><span aria-hidden="true">◈</span>招聘来源</a>
-      <a href="#settings" data-view="settings" class="nav-item"><span aria-hidden="true">☷</span>检索配置</a>
       <a href="#runs" data-view="runs" class="nav-item"><span aria-hidden="true">◷</span>运行记录</a>
+      <a href="#feedback" data-view="feedback" class="nav-item"><span aria-hidden="true">↗</span>反馈与建议</a>
     </nav>
     <div class="sidebar-bottom"><div class="sidebar-note">让下一份工作<br>更接近你的期待。</div><div class="local-badge">静态站点 · 定时更新</div><small>JOB RADAR / 01</small></div>
   </aside>
@@ -28,15 +27,14 @@
     <header class="topbar"><span><span class="muted">工作台</span><span class="slash">/</span><span id="breadcrumb">首页</span></span><div class="top-meta"><span id="data-label">正在读取数据</span><span class="avatar" aria-label="个人工作台">J</span></div></header>
     <main id="main" tabindex="-1">
       <div id="load-error" class="notice error" hidden></div>
-      <div id="demo-banner" class="notice" hidden><span><strong>示例预览</strong> 岗位、公司与薪资均为虚构，尚未执行真实检索。</span><a href="#settings">配置真实来源 <span aria-hidden="true">↗</span></a></div>
-      <div id="draft-banner" class="notice draft" hidden><span>正在查看本地配置草稿。导出并替换仓库配置后，下次采集才会生效。</span><button class="text-button" id="discard-draft">还原仓库配置</button></div>
+      <div id="demo-banner" class="notice" hidden><span><strong>示例预览</strong> 岗位、公司与薪资均为虚构，尚未执行真实检索。</span><a href="#feedback">反馈与建议 ↗</a></div>
       <section id="view-home" class="view home-view" aria-labelledby="home-title">
         <div class="home-hero">
           <div class="home-intro">
             <p class="home-kicker">中国大陆技术岗 · 兼顾远程机会</p>
             <h1 id="home-title">下一份工作，<br>从<span>看见更多机会</span>开始。</h1>
-            <p class="home-lead">把散落在公司官网与招聘平台的岗位汇集到一处。按你的关键词、城市和来源定期检索，把时间留给真正值得了解的机会。</p>
-            <div class="home-actions"><a class="button primary" href="#discover">浏览岗位 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#settings">设置我的搜索</a></div>
+            <p class="home-lead">把散落在公司官网与招聘平台的岗位汇集到一处。定期更新，在这里按技能与城市筛选，把时间留给真正值得了解的机会。</p>
+            <div class="home-actions"><a class="button primary" href="#discover">浏览岗位 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#feedback">告诉我们你的需求</a></div>
             <p class="home-footnote">自由浏览 · 保留来源链接 · 招聘详情以原文为准</p>
           </div>
           <aside class="home-snapshot" aria-labelledby="home-data-caption">
@@ -49,36 +47,43 @@
           </aside>
         </div>
         <section class="home-guide" aria-labelledby="guide-title">
-          <div class="home-section-heading"><div><p class="home-kicker">HOW IT WORKS</p><h2 id="guide-title">三个步骤，让搜索更有方向。</h2></div><p>可以直接浏览现有岗位，<br>也可以先调整自己的检索条件。</p></div>
+          <div class="home-section-heading"><div><p class="home-kicker">HOW IT WORKS</p><h2 id="guide-title">三个步骤，让搜索更有方向。</h2></div><p>从浏览到反馈，<br>一起让岗位列表更有用。</p></div>
           <ol class="home-steps">
-            <li><span class="home-step-number">01 / 定义方向</span><h3>告诉雷达，你在找什么</h3><p>设置关键词、排除词和目标城市，选择招聘来源。不同网站可以使用各自的检索策略。</p><a href="#settings">配置关键词与策略 ↗</a></li>
-            <li><span class="home-step-number">02 / 定期汇集</span><h3>让信息，持续更新</h3><p>自动采集公开岗位，并通过 Codex 核验可访问的职位原文。运行记录会展示每个来源的结果和受限情况。</p><a href="#runs">了解本次更新 ↗</a></li>
-            <li><span class="home-step-number">03 / 发现机会</span><h3>筛选、了解，再做决定</h3><p>按地点、技能、来源或远程方式缩小范围。查看岗位详情，再前往招聘原文确认要求与申请方式。</p><a href="#discover">开始浏览岗位 ↗</a></li>
+            <li><span class="home-step-number">01 / 浏览与筛选</span><h3>从你关心的方向开始</h3><p>浏览已收录的岗位，按技能、城市、远程方式和岗位来源筛选。所有条件都只影响当前浏览结果。</p><a href="#discover">开始浏览岗位 ↗</a></li>
+            <li><span class="home-step-number">02 / 了解与确认</span><h3>找到机会，再看原文</h3><p>查看岗位要求、来源和最近核验时间。前往招聘原文确认信息与申请方式，更新情况可在运行记录查看。</p><a href="#runs">了解本次更新 ↗</a></li>
+            <li><span class="home-step-number">03 / 反馈与完善</span><h3>还差一点？告诉我们</h3><p>没找到理想岗位、缺少功能或想推荐招聘网站，都可以提交 GitHub Issue，让维护者了解你的需求。</p><a href="#feedback">选择反馈类型 ↗</a></li>
           </ol>
         </section>
-        <section class="home-config" aria-labelledby="home-config-title">
-          <div><p class="home-kicker">一个配置入口</p><h2 id="home-config-title">所有搜索条件，都在同一个文件里。</h2><p><code>config/search.json</code> 管理关键词、招聘来源、默认策略与网站专属策略。网页支持编辑完整配置，保存为浏览器草稿；导出后替换并提交仓库中的这个文件，自动采集才会采用新条件。</p></div>
-          <div class="home-config-actions"><a class="button primary" href="https://github.com/BillShiyaoZhang/job-hunting/blob/main/config/search.json" target="_blank" rel="noopener noreferrer">打开仓库统一配置 ↗</a><a href="#settings">在网页中编辑草稿 ↗</a><small>仓库配置需要仓库访问权限</small></div>
+        <section class="home-feedback" aria-labelledby="home-feedback-title">
+          <div><p class="home-kicker">让工作雷达更懂你的需要</p><h2 id="home-feedback-title">缺少的机会与功能，值得被听见。</h2><p>找不到合适的岗位？想要新的功能，或知道一个值得收录的招聘网站？按类型提交 Issue，维护者会查看并评估。</p></div>
+          <div class="home-feedback-actions"><a class="button primary" href="#feedback">选择反馈类型 ↗</a><a href="https://github.com/BillShiyaoZhang/job-hunting/issues" target="_blank" rel="noopener noreferrer">查看已有反馈 ↗</a><small>使用 GitHub 账号提交，内容公开可见</small></div>
         </section>
       </section>
       <section id="view-discover" class="view" hidden>
         <div class="page-heading"><div><div class="eyebrow">FIND YOUR NEXT CHAPTER</div><h1>岗位发现<span class="heading-dot">.</span></h1><p>聚合多个招聘来源，找到值得进一步了解的机会。</p></div><button class="button secondary" id="reload">↻ 刷新数据</button></div>
-        <div class="stats"><div><span>收录岗位</span><strong id="stat-total">—</strong><small>当前数据集</small></div><div><span>可关注岗位</span><strong id="stat-active">—</strong><small>未超过复核期限</small></div><div><span>远程机会</span><strong id="stat-remote">—</strong><small>支持远程工作</small></div><div><span>已配置来源</span><strong id="stat-sources">—</strong><small id="stat-enabled">— 个已启用</small></div></div>
+        <div class="stats"><div><span>收录岗位</span><strong id="stat-total">—</strong><small>当前数据集</small></div><div><span>可关注岗位</span><strong id="stat-active">—</strong><small>未超过复核期限</small></div><div><span>远程机会</span><strong id="stat-remote">—</strong><small>支持远程工作</small></div><div><span>岗位来源</span><strong id="stat-sources">—</strong><small>当前列表中的来源</small></div></div>
         <div class="searchbar"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索岗位名称、公司或技能…" aria-label="搜索岗位名称、公司或技能"><span class="search-hint">在当前岗位中搜索</span></div>
         <div class="discovery-grid">
-          <aside class="filters" aria-label="岗位筛选"><div class="filter-title"><h2>筛选条件</h2><button id="reset-filters" class="text-button">重置</button></div><label class="field-label" for="location">工作地点</label><select id="location"><option value="">全部地点</option></select><fieldset><legend>工作方式</legend><label class="check"><input type="checkbox" value="remote" name="workplace">远程办公<span id="remote-count"></span></label><label class="check"><input type="checkbox" value="hybrid" name="workplace">混合办公</label><label class="check"><input type="checkbox" value="onsite" name="workplace">现场办公</label></fieldset><fieldset id="source-filters"><legend>招聘来源</legend></fieldset><label class="field-label" for="status">岗位状态</label><select id="status"><option value="active">可关注</option><option value="all">全部状态</option><option value="stale">待复核</option><option value="expired">已过期</option></select><div class="filter-foot">筛选仅影响当前浏览结果。<br>采集条件在「检索配置」中设置。</div></aside>
-          <section class="results" aria-label="岗位结果"><div class="results-toolbar"><div><strong id="result-count" aria-live="polite">正在载入岗位…</strong><span class="muted" id="result-note"></span></div><label class="sort-label">排序<select id="sort"><option value="newest">最近收录</option><option value="published">最新发布</option><option value="company">公司名称</option></select></label></div><div id="job-grid" class="job-grid"></div><div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h2>暂时没有匹配的岗位</h2><p>试试其他关键词，或减少筛选条件。</p><button id="empty-reset" class="button secondary">清除筛选</button></div><div class="pagination"><span id="page-info"></span><div><button id="prev-page" class="button secondary" aria-label="上一页">←</button><button id="next-page" class="button secondary" aria-label="下一页">→</button></div></div></section>
+          <aside class="filters" aria-label="岗位筛选"><div class="filter-title"><h2>筛选条件</h2><button id="reset-filters" class="text-button">重置</button></div><label class="field-label" for="location">工作地点</label><select id="location"><option value="">全部地点</option></select><fieldset><legend>工作方式</legend><label class="check"><input type="checkbox" value="remote" name="workplace">远程办公<span id="remote-count"></span></label><label class="check"><input type="checkbox" value="hybrid" name="workplace">混合办公</label><label class="check"><input type="checkbox" value="onsite" name="workplace">现场办公</label></fieldset><fieldset id="source-filters"><legend>招聘来源</legend></fieldset><label class="field-label" for="status">岗位状态</label><select id="status"><option value="active">可关注</option><option value="all">全部状态</option><option value="stale">待复核</option><option value="expired">已过期</option></select><div class="filter-foot">筛选仅影响当前浏览结果。<br>没有找到合适岗位？<a href="https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=01-job-request.yml" data-issue="jobs" target="_blank" rel="noopener noreferrer">补充岗位需求 ↗</a></div></aside>
+          <section class="results" aria-label="岗位结果"><div class="results-toolbar"><div><strong id="result-count" aria-live="polite">正在载入岗位…</strong><span class="muted" id="result-note"></span></div><label class="sort-label">排序<select id="sort"><option value="newest">最近收录</option><option value="published">最新发布</option><option value="company">公司名称</option></select></label></div><div id="job-grid" class="job-grid"></div><div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h2>暂时没有匹配的岗位</h2><p>试试其他关键词，或减少筛选条件。</p><div class="empty-actions"><button id="empty-reset" class="button secondary">清除筛选</button><a class="button primary" href="https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=01-job-request.yml" data-issue="jobs" target="_blank" rel="noopener noreferrer">告诉我们想找什么 ↗</a></div><p class="feedback-hint">将带上当前筛选条件，提交前可在 GitHub 修改。</p></div><div class="pagination"><span id="page-info"></span><div><button id="prev-page" class="button secondary" aria-label="上一页">←</button><button id="next-page" class="button secondary" aria-label="下一页">→</button></div></div></section>
         </div>
       </section>
-      <section id="view-sources" class="view" hidden><div class="page-heading"><div><div class="eyebrow">YOUR SOURCES</div><h1>招聘来源<span class="heading-dot">.</span></h1><p>公开数据自动采集，需要浏览器的网站由 Codex 协助检索。</p></div><button id="add-source" class="button primary">＋ 添加来源</button></div><div id="source-grid" class="source-grid"></div><div class="info-panel"><strong>每个网站，都可以有自己的检索方式。</strong><p>留空的策略字段继承默认配置；指定的字段覆盖默认值。关键词和地点数组设为 []，表示不限制。所有编辑先保存在此浏览器，导出后才可应用到自动采集。</p><button class="button secondary export-config">导出配置 JSON ↗</button></div></section>
-      <section id="view-settings" class="view" hidden><div class="page-heading"><div><div class="eyebrow">SEARCH ON YOUR TERMS</div><h1>检索配置<span class="heading-dot">.</span></h1><p>定义你想找的机会，让所有来源遵循同一套基本条件。</p></div><button class="button primary export-config">导出配置 ↗</button></div><div class="info-panel config-entry"><strong>统一配置文件：<code>config/search.json</code></strong><p>关键词在 search，默认策略在 defaults，所有来源及其专属策略在 sources。下方“完整 JSON 配置”可一次编辑全部内容。网页保存的是浏览器草稿；导出并替换、提交仓库配置后，才会更新自动采集。</p><div class="actions"><a class="button secondary" href="https://github.com/BillShiyaoZhang/job-hunting/blob/main/config/search.json" target="_blank" rel="noopener noreferrer">打开仓库统一配置 ↗</a><a class="button secondary" href="#sources">管理招聘来源</a></div></div><form id="settings-form" class="settings-layout"><div class="panel"><h2>搜索偏好</h2><p class="muted">适用于所有启用来源，来源专属策略可覆盖这些条件。</p><label class="field-label" for="keywords">检索关键词</label><textarea id="keywords" rows="3" placeholder="前端, React, Python"></textarea><small>用逗号或换行分隔，中英文均可。</small><div class="form-row"><div><label class="field-label" for="keyword-mode">匹配方式</label><select id="keyword-mode"><option value="any">包含任意关键词</option><option value="all">包含全部关键词</option></select></div><div><label class="field-label" for="search-locations">目标地点</label><input id="search-locations" placeholder="留空表示不限地点"></div></div><label class="field-label" for="exclude-keywords">排除关键词</label><textarea id="exclude-keywords" rows="2" placeholder="外包, 派遣"></textarea><label class="field-label" for="search-fields">检索字段</label><input id="search-fields" placeholder="title, tags, description"><small>可用：title、company、location、tags、description</small></div><div class="panel"><h2>默认检索策略</h2><div id="numeric-fields" class="form-row"></div><p class="help">超过复核期限的岗位显示为“待复核”；只有原文明确的截止日期已过，才标为“已过期”。</p><button type="submit" class="button primary">保存本地草稿</button></div></form><details class="panel advanced"><summary>完整 JSON 配置 · 导入与高级编辑</summary><p class="muted">支持一次修改全部来源、接口地址和覆盖策略。请勿填写令牌或密码；站点配置公开可读。</p><textarea id="config-json" rows="18" spellcheck="false" aria-label="完整 JSON 配置"></textarea><div class="actions"><button id="apply-json" class="button secondary">保存 JSON 为草稿</button><label class="button secondary file-button">导入 JSON<input id="import-config" type="file" accept=".json,application/json"></label><button class="button secondary export-config">导出 JSON</button></div></details></section>
       <section id="view-runs" class="view" hidden><div class="page-heading"><div><div class="eyebrow">KEEP AN EYE ON THE SIGNAL</div><h1>运行记录<span class="heading-dot">.</span></h1><p>了解每次采集的来源状态、有效结果与需要处理的问题。</p></div><span class="pill">最近 30 次</span></div><div class="pipeline-strip"><span><b>01</b> Actions / Codex 检索</span><i>→</i><span><b>02</b> 核验与去重</span><i>→</i><span><b>03</b> 静态数据</span></div><div id="run-list"></div></section>
+      <section id="view-feedback" class="view feedback-view" hidden aria-labelledby="feedback-title">
+        <div class="page-heading"><div><div class="eyebrow">BUILD A BETTER JOB RADAR</div><h1 id="feedback-title">反馈与建议<span class="heading-dot">.</span></h1><p>少了哪些机会、哪里不够好用？选一个模板，把你的想法告诉维护者。</p></div><a class="button secondary" href="https://github.com/BillShiyaoZhang/job-hunting/issues" target="_blank" rel="noopener noreferrer">查看已有反馈 ↗</a></div>
+        <div class="feedback-grid">
+          <a class="feedback-card" href="https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=01-job-request.yml" data-issue="jobs" target="_blank" rel="noopener noreferrer"><span class="feedback-category">01 / 岗位需求</span><h2>没有找到理想岗位</h2><p>告诉我们想找的职位、技能、城市、远程偏好与经验范围，帮助补充岗位覆盖。</p><span class="feedback-link">填写岗位需求 ↗</span></a>
+          <a class="feedback-card" href="https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=02-feature-request.yml" data-issue="feature" target="_blank" rel="noopener noreferrer"><span class="feedback-category">02 / 功能建议</span><h2>还缺一项好用的功能</h2><p>描述你遇到的困难、使用场景，以及希望网站怎样改进。</p><span class="feedback-link">提出功能建议 ↗</span></a>
+          <a class="feedback-card" href="https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=03-source-request.yml" data-issue="source" target="_blank" rel="noopener noreferrer"><span class="feedback-category">03 / 信息源建议</span><h2>推荐一个招聘网站</h2><p>提供公司官网、招聘平台或公开岗位订阅的链接，说明它有哪些值得关注的机会。</p><span class="feedback-link">推荐招聘信息源 ↗</span></a>
+          <a class="feedback-card" href="https://github.com/BillShiyaoZhang/job-hunting/issues/new?template=04-problem-report.yml" data-issue="problem" target="_blank" rel="noopener noreferrer"><span class="feedback-category">04 / 问题反馈</span><h2>信息不准确，或页面出了问题</h2><p>报告岗位内容错误、失效链接、筛选异常等问题，并附上相关页面或复现步骤。</p><span class="feedback-link">报告数据或网站问题 ↗</span></a>
+        </div>
+        <div class="feedback-note"><strong>提交前，先看看是否已有相同反馈。</strong><p>链接会在 GitHub 打开对应表单，需要登录 GitHub 账号；填写后由你确认提交。Issue 内容公开可见，请勿填写简历、联系方式或登录凭据。维护者会评估建议，不承诺所有岗位或网站都能收录。</p></div>
+      </section>
+      <aside class="feedback-strip" aria-label="帮助完善工作雷达"><div><strong>没找到合适岗位，或希望网站更好用？</strong><p>岗位需求、功能建议、新信息源与问题，都可以通过 GitHub Issue 反馈。</p></div><a class="button secondary" href="#feedback">提交反馈 ↗</a></aside>
       <footer><span>工作雷达 <span class="muted">· 每一次选择，都更有方向。</span></span><span id="updated-at">—</span></footer>
     </main>
   </div>
   <dialog id="job-dialog"><div class="dialog-heading"><span class="eyebrow">OPPORTUNITY DETAILS</span><button class="icon-button close-dialog" aria-label="关闭岗位详情">×</button></div><div id="job-detail"></div></dialog>
-  <dialog id="source-dialog"><form id="source-form"><div class="dialog-heading"><h2 id="source-dialog-title">编辑招聘来源</h2><button type="button" class="icon-button close-dialog" aria-label="关闭来源编辑">×</button></div><div class="form-row"><div><label class="field-label" for="source-id">来源 ID</label><input id="source-id" required pattern="[a-z0-9][a-z0-9-]{0,63}" placeholder="my-careers"></div><div><label class="field-label" for="source-name">显示名称</label><input id="source-name" required></div></div><div class="form-row"><div><label class="field-label" for="source-adapter">检索方式</label><select id="source-adapter"><option value="greenhouse">Greenhouse 公开接口</option><option value="lever">Lever 公开接口</option><option value="rss">RSS / Atom 订阅</option><option value="jsonld">JSON-LD 职位页面</option><option value="codex">Codex 浏览器检索</option></select></div><div><label class="field-label" for="source-company">公司名称（可选）</label><input id="source-company"></div></div><label class="check source-enabled"><input id="source-enabled" type="checkbox">启用此来源（导出后生效）</label><label class="field-label" for="source-options">来源参数 JSON</label><textarea id="source-options" rows="4" spellcheck="false" required></textarea><small id="source-options-help"></small><label class="field-label" for="source-strategy">专属检索策略 JSON</label><textarea id="source-strategy" rows="5" spellcheck="false" required></textarea><small>例如 {"keywords":["React"],"locations":["上海"],"max_results":30}；{} 继承全部默认策略。</small><label class="field-label" for="source-notes">检索说明</label><textarea id="source-notes" rows="2"></textarea><p id="source-error" class="form-error" role="alert"></p><div class="actions"><button class="button primary" type="submit">保存本地草稿</button><button class="button secondary close-dialog" type="button">取消</button></div></form></dialog>
-  <div id="toast" class="toast" role="status" hidden></div>
-  <noscript><div class="notice error">请启用 JavaScript 以使用岗位筛选和配置编辑。</div></noscript>
+  <noscript><div class="notice error">请启用 JavaScript 以使用岗位筛选；反馈可通过本页的 GitHub 链接提交。</div></noscript>
 </body>
 </html>

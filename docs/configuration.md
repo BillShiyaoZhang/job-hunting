@@ -1,6 +1,6 @@
 # 检索配置与来源接入
 
-配置文件为 `config/search.json`，UTF-8 JSON。CLI 和前端均校验字段和类型，CLI 是最终校验入口。
+配置文件为 `config/search.json`，UTF-8 JSON，仅由项目维护者在仓库中修改。CLI 校验字段和类型；公开网页不提供配置编辑或来源管理，访客通过 GitHub Issue 提出需求。`dist/data/config.json` 为构建副本，不应直接修改。
 
 ## 策略继承
 

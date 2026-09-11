@@ -1,0 +1,26 @@
+name: 提出功能建议
+description: 告诉我们哪一步不够好用，以及希望增加或改善的功能。
+title: "[功能建议] "
+body:
+  - type: markdown
+    attributes:
+      value: 请先搜索已有 Issue，避免重复建议。提交内容公开可见；维护者会评估需求，不承诺实施时间。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 现在遇到什么困难？
+      placeholder: 描述你想完成的事情，以及目前卡在哪一步。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望怎样改善？
+      placeholder: 描述期望的操作或结果，也可以提出几种可接受的方式。
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 使用场景或参考示例（选填）
+      placeholder: 可以附公开链接或截图；请移除个人信息。
