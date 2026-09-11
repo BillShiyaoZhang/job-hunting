@@ -1,6 +1,78 @@
 [
   {
     "schema_version": 1,
+    "started_at": "2026-09-11T02:55:10Z",
+    "finished_at": "2026-09-11T02:55:10Z",
+    "mode": "live",
+    "status": "error",
+    "total_jobs": 0,
+    "sources": [
+      {
+        "source_id": "tencent",
+        "name": "腾讯招聘",
+        "adapter": "tencent",
+        "status": "error",
+        "found": 0,
+        "accepted": 0,
+        "message": "ValueError: 来源域名解析到非公开地址",
+        "coverage": "partial"
+      },
+      {
+        "source_id": "flexport",
+        "name": "Flexport 官网",
+        "adapter": "greenhouse",
+        "status": "error",
+        "found": 0,
+        "accepted": 0,
+        "message": "ValueError: 来源域名解析到非公开地址",
+        "coverage": "partial"
+      },
+      {
+        "source_id": "xsolla",
+        "name": "Xsolla 官网",
+        "adapter": "lever",
+        "status": "error",
+        "found": 0,
+        "accepted": 0,
+        "message": "ValueError: 来源域名解析到非公开地址",
+        "coverage": "partial"
+      },
+      {
+        "source_id": "remotive",
+        "name": "Remotive",
+        "adapter": "remotive",
+        "status": "error",
+        "found": 0,
+        "accepted": 0,
+        "message": "ValueError: 来源域名解析到非公开地址",
+        "coverage": "partial"
+      },
+      {
+        "source_id": "boss",
+        "name": "BOSS 直聘",
+        "adapter": "codex",
+        "status": "blocked",
+        "found": 0,
+        "accepted": 0,
+        "message": "首轮原文核验：百度后端详情跳转安全验证页面，另一上海基础平台详情无法获取；未绕过验证，未将搜索摘要入库。",
+        "coverage": "partial",
+        "observed_at": "2026-09-11T02:50:29Z"
+      },
+      {
+        "source_id": "liepin",
+        "name": "猎聘",
+        "adapter": "codex",
+        "status": "blocked",
+        "found": 0,
+        "accepted": 0,
+        "message": "首轮原文核验：立邦 AI Agent 详情跳转验证码；另一岗位仅得到旧搜索快照，无法确认当前状态。未导入未经当前原文核验的岗位。",
+        "coverage": "partial",
+        "observed_at": "2026-09-11T02:50:29Z"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
     "started_at": "2026-09-11T02:18:59Z",
     "finished_at": "2026-09-11T02:18:59Z",
     "mode": "demo",

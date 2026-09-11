@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import ipaddress
 import json
+import re
 import socket
 import time
 import urllib.error
@@ -13,6 +14,13 @@ from html.parser import HTMLParser
 from urllib.parse import quote, urlsplit
 
 from .core import safe_url, plain, stamp
+
+
+class Records(list):
+    """A list with coverage information for a deliberately bounded crawl."""
+    def __init__(self, rows=(), *, truncated=False):
+        super().__init__(rows)
+        self.truncated = truncated
 
 
 def public_address(url):
@@ -79,6 +87,53 @@ def lever(source, rules, fetch):
         if len(rows) < 100:
             break
     return result
+
+
+def tencent(source, rules, fetch):
+    """Read Tencent's public careers listing, newest-first, without login."""
+    result = Records()
+    seen = set()
+    page_size = 50
+    total = 0
+    for page in range(1, rules["max_pages"] + 1):
+        payload = json.loads(fetch(f"https://careers.tencent.com/tencentcareer/api/post/Query?pageIndex={page}&pageSize={page_size}&language=zh-cn"))
+        data = payload.get("Data") if isinstance(payload, dict) else None
+        if not isinstance(payload, dict) or payload.get("Code") != 200 or not isinstance(data, dict) or not isinstance(data.get("Posts"), list) or not isinstance(data.get("Count"), int):
+            raise ValueError("腾讯官网招聘接口格式变化或返回错误")
+        total = data["Count"]
+        rows = data["Posts"]
+        if not rows:
+            break
+        new = 0
+        for row in rows:
+            post_id = str(row.get("PostId", ""))
+            if not post_id.isdigit():
+                raise ValueError("腾讯职位缺少有效 PostId")
+            if post_id in seen:
+                continue
+            seen.add(post_id)
+            new += 1
+            if row.get("IsValid") is False:
+                continue
+            updated = row.get("LastUpdateTime", "")
+            match = re.fullmatch(r"(\d{4})年(\d{2})月(\d{2})日", updated)
+            updated_at = "-".join(match.groups()) + "T00:00:00+08:00" if match else None
+            result.append({"title": row.get("RecruitPostName"), "company": "腾讯", "url": f"https://careers.tencent.com/jobdesc.html?postId={post_id}", "location": " · ".join(filter(None, [row.get("CountryName"), row.get("LocationName")])), "description": row.get("Responsibility"), "updated_at": updated_at, "tags": [v for v in [row.get("CategoryName"), row.get("BGName"), row.get("RequireWorkYearsName")] if v]})
+        if len(seen) >= total or len(rows) < page_size:
+            break
+        if not new:
+            result.truncated = True
+            break
+    result.truncated = result.truncated or len(seen) < total
+    return result
+
+
+def remotive(source, rules, fetch):
+    """Free public remote-job API; keep Remotive's attribution URL."""
+    payload = json.loads(fetch("https://remotive.com/api/remote-jobs"))
+    if not isinstance(payload, dict) or not isinstance(payload.get("jobs"), list):
+        raise ValueError("Remotive 返回结构无效")
+    return [{"title": j["title"], "company": j.get("company_name"), "url": j["url"], "location": j.get("candidate_required_location") or "地区限制未注明", "workplace": "remote", "employment_type": j.get("job_type"), "salary": j.get("salary"), "description": j.get("description"), "tags": j.get("tags") or [], "published_at": j.get("publication_date")} for j in payload["jobs"]]
 
 
 def rss(source, rules, fetch):
@@ -172,4 +227,4 @@ def jsonld(source, rules, fetch):
     return result
 
 
-ADAPTER_FUNCTIONS = {"greenhouse": greenhouse, "lever": lever, "rss": rss, "jsonld": jsonld}
+ADAPTER_FUNCTIONS = {"greenhouse": greenhouse, "lever": lever, "rss": rss, "jsonld": jsonld, "tencent": tencent, "remotive": remotive}

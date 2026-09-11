@@ -7,7 +7,7 @@ from pathlib import Path
 
 from jobradar.core import canonical_url, load_config, matches, merge_jobs, normalize, plain, safe_url, stamp, strategy, validate_config, write_json, read_json
 from jobradar.pipeline import build, collect, load_batches, validate_batch, validate_dataset
-from jobradar.adapters import greenhouse, lever, rss, jsonld
+from jobradar.adapters import greenhouse, lever, rss, jsonld, tencent, remotive
 
 NOW = datetime(2026, 9, 11, 10, tzinfo=timezone.utc)
 
@@ -135,6 +135,26 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(rows[0]["workplace"], "remote")
         self.assertIn("90–120", rows[0]["salary"])
 
+    def test_tencent_boundaries_dates_and_official_links(self):
+        rules = {**self.rules, 'max_pages': 1}
+        payload = {'Code':200, 'Data':{'Count':1000, 'Posts':[{'PostId':'123', 'RecruitPostName':'后端开发工程师','CountryName':'中国','LocationName':'深圳','CategoryName':'技术','LastUpdateTime':'2026年09月10日','Responsibility':'Build services','IsValid':True}]}}
+        rows = tencent({}, rules, lambda url: json.dumps(payload))
+        self.assertTrue(rows.truncated)
+        self.assertEqual(rows[0]['url'], 'https://careers.tencent.com/jobdesc.html?postId=123')
+        self.assertEqual(rows[0]['updated_at'], '2026-09-10T00:00:00+08:00')
+        self.assertNotIn('published_at', rows[0])
+        with self.assertRaises(ValueError):
+            tencent({}, rules, lambda url: '{"Code":403}')
+
+    def test_remotive_preserves_attribution_and_location_restrictions(self):
+        payload = {'jobs':[{'title':'Backend Engineer','company_name':'Acme','url':'https://remotive.com/remote-jobs/software-dev/engineer-123','candidate_required_location':'USA Only','publication_date':'2026-09-10T12:00:00','tags':['Python']}]}
+        rows = remotive({}, self.rules, lambda url: json.dumps(payload))
+        self.assertEqual(rows[0]['location'], 'USA Only')
+        self.assertTrue(rows[0]['url'].startswith('https://remotive.com/'))
+        self.assertEqual(rows[0]['workplace'], 'remote')
+        record = normalize(rows[0], self.c['sources'][0], NOW)
+        self.assertFalse(matches(record, {**self.rules,'locations':['Worldwide','China','APAC','Asia']}, NOW))
+
 
 class PipelineTests(unittest.TestCase):
     def setUp(self):
@@ -197,6 +217,27 @@ class PipelineTests(unittest.TestCase):
     def test_no_enabled_sources_cannot_destroy_demo(self):
         with self.assertRaises(ValueError):
             collect(load_config(Path(__file__).parent / 'fixtures/search.json'))
+
+    def test_source_cooldown_preserves_observation_and_config_changes_invalidate(self):
+        for s in self.c['sources']:
+            s['enabled'] = s['id'] == 'greenhouse'
+        self.c['defaults']['min_interval_hours'] = 24
+        calls = []
+        def factory(rules):
+            def fetch(url):
+                calls.append(url)
+                return json.dumps({'jobs':[{'title':'React Engineer','absolute_url':'https://example.com/one'}]})
+            return fetch
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            collect(self.c, root, fetch_factory=factory, now=NOW)
+            run = collect(self.c, root, fetch_factory=factory, now=NOW + timedelta(hours=1))
+            self.assertEqual(run['sources'][0]['status'], 'cached')
+            self.assertEqual(len(calls), 1)
+            self.assertEqual(read_json(root/'jobs.json')['jobs'][0]['last_seen_at'], stamp(NOW))
+            self.c['search']['keywords'] = ['React']
+            collect(self.c, root, fetch_factory=factory, now=NOW + timedelta(hours=2))
+            self.assertEqual(len(calls), 2)
 
     def test_end_to_end_public_and_codex_to_static(self):
         for s in self.c['sources']:

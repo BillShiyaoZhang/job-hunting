@@ -7,116 +7,181 @@
   "search": {
     "keywords": [
       "前端",
-      "Frontend",
-      "React",
-      "Python",
-      "产品经理",
-      "Product",
+      "后端",
+      "全栈",
+      "开发",
+      "研发",
+      "算法",
+      "机器学习",
+      "数据",
+      "测试",
+      "运维",
+      "安全",
+      "技术",
+      "工程师",
+      "Engineer",
+      "Developer",
       "AI",
-      "Engineer"
+      "SRE"
     ],
     "exclude_keywords": [
-      "外包"
+      "外包",
+      "销售",
+      "商务",
+      "客户成功",
+      "Marketing",
+      "Account Executive",
+      "Business Development",
+      "Recruiter"
     ],
-    "locations": []
+    "locations": [
+      "北京",
+      "上海",
+      "深圳",
+      "广州",
+      "杭州",
+      "成都",
+      "武汉",
+      "南京",
+      "苏州",
+      "西安",
+      "重庆",
+      "长沙",
+      "合肥",
+      "厦门",
+      "天津",
+      "珠海",
+      "青岛",
+      "Beijing",
+      "Shanghai",
+      "Shenzhen",
+      "Guangzhou",
+      "Hangzhou",
+      "Chengdu",
+      "China"
+    ]
   },
   "defaults": {
     "keyword_mode": "any",
     "search_fields": [
       "title",
-      "tags",
-      "description"
+      "tags"
     ],
     "max_age_days": 45,
     "stale_after_days": 14,
     "max_results": 100,
-    "timeout_seconds": 20,
-    "request_delay_seconds": 1,
-    "retries": 2,
-    "max_pages": 3
+    "timeout_seconds": 15,
+    "request_delay_seconds": 2,
+    "retries": 1,
+    "max_pages": 4,
+    "min_interval_hours": 12
   },
   "sources": [
     {
-      "id": "greenhouse",
-      "name": "Greenhouse",
+      "id": "tencent",
+      "name": "腾讯招聘",
+      "adapter": "tencent",
+      "enabled": true,
+      "company": "腾讯",
+      "url": "https://careers.tencent.com/",
+      "strategy": {
+        "max_pages": 4,
+        "max_results": 100
+      },
+      "notes": "官网公开招聘接口，无需密钥。每日读取最近 4 页（最多 200 条），筛选大陆技术岗；更新时间不冒充发布日期，达到页数上限显示部分完成。"
+    },
+    {
+      "id": "flexport",
+      "name": "Flexport 官网",
       "adapter": "greenhouse",
-      "enabled": false,
-      "board": "your-board-token",
-      "company": "填写公司名",
-      "strategy": {},
-      "notes": "填写目标公司的公开招聘板 token 后启用。"
+      "enabled": true,
+      "board": "flexport",
+      "company": "Flexport",
+      "strategy": {
+        "max_results": 50
+      },
+      "notes": "公司官方 Greenhouse 招聘板，免费无需认证；仅保留中国大陆匹配岗位。"
     },
     {
-      "id": "lever",
-      "name": "Lever",
+      "id": "xsolla",
+      "name": "Xsolla 官网",
       "adapter": "lever",
-      "enabled": false,
-      "board": "your-company",
+      "enabled": true,
+      "board": "xsolla",
       "region": "global",
-      "company": "填写公司名",
+      "company": "Xsolla",
       "strategy": {
-        "keywords": [
-          "Engineer",
-          "Product"
-        ],
-        "keyword_mode": "any"
+        "max_results": 50,
+        "max_pages": 3
       },
-      "notes": "支持 global / eu；使用公开职位接口。"
+      "notes": "公司官方 Lever 招聘板，免费无需认证；优先上海、北京技术岗位。"
     },
     {
-      "id": "remote-rss",
-      "name": "远程工作 RSS",
-      "adapter": "rss",
-      "enabled": false,
-      "url": "https://weworkremotely.com/remote-jobs.rss",
+      "id": "remotive",
+      "name": "Remotive",
+      "adapter": "remotive",
+      "enabled": true,
+      "url": "https://remotive.com/",
       "strategy": {
-        "keywords": [
-          "React",
-          "Python",
-          "Frontend"
+        "locations": [
+          "Worldwide",
+          "China",
+          "APAC",
+          "Asia"
         ],
-        "locations": []
+        "max_results": 40,
+        "max_age_days": 60,
+        "min_interval_hours": 24
       },
-      "notes": "启用前确认订阅地址可用及来源使用要求。"
+      "notes": "免费公开远程岗位，至少间隔 24 小时，数据约延迟 24 小时。保留 Remotive 来源与原始链接；只筛选全球、中国或亚洲范围，申请资格仍以原文地区及用工要求为准。"
     },
     {
       "id": "boss",
       "name": "BOSS 直聘",
       "adapter": "codex",
-      "enabled": false,
+      "enabled": true,
       "url": "https://www.zhipin.com/",
-      "query_template": "site:zhipin.com {keyword} {location}",
+      "query_template": "site:zhipin.com/job_detail {keyword} {location}",
       "strategy": {
         "keywords": [
           "前端",
-          "产品经理"
+          "后端",
+          "算法"
         ],
-        "max_results": 30
+        "locations": [
+          "北京",
+          "上海",
+          "深圳",
+          "杭州"
+        ],
+        "max_pages": 3,
+        "max_results": 12
       },
-      "notes": "由 Codex 查阅可访问的职位原文；需要登录、验证码或访问受限时记录 blocked，不绕过。"
+      "notes": "Codex 每轮最多打开 3 个页面，按日期轮换关键词与城市；只核验可访问的原文，遇到登录或安全验证记录 blocked，不绕过、不依据摘要入库。"
     },
     {
       "id": "liepin",
       "name": "猎聘",
       "adapter": "codex",
-      "enabled": false,
+      "enabled": true,
       "url": "https://www.liepin.com/",
-      "query_template": "site:liepin.com {keyword} {location}",
+      "query_template": "site:liepin.com/job {keyword} {location}",
       "strategy": {
-        "max_results": 30
+        "keywords": [
+          "前端",
+          "后端",
+          "算法"
+        ],
+        "locations": [
+          "北京",
+          "上海",
+          "深圳",
+          "杭州"
+        ],
+        "max_pages": 3,
+        "max_results": 12
       },
-      "notes": "由 Codex 检索并核验原文，未知信息留空。"
-    },
-    {
-      "id": "company-careers",
-      "name": "企业招聘官网",
-      "adapter": "jsonld",
-      "enabled": false,
-      "urls": [
-        "https://example.com/careers/job"
-      ],
-      "strategy": {},
-      "notes": "填写带 schema.org JobPosting JSON-LD 的具体职位页；不会自动遍历列表页。"
+      "notes": "Codex 低频检索，每轮最多打开 3 个页面。必须核验当前原文；搜索缓存、旧快照和验证码页面不算成功核验，未知信息留空。"
     }
   ]
 }

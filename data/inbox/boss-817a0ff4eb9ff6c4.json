@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_id": "boss",
+  "collected_at": "2026-09-11T02:50:29Z",
+  "status": "blocked",
+  "coverage": "partial",
+  "message": "首轮原文核验：百度后端详情跳转安全验证页面，另一上海基础平台详情无法获取；未绕过验证，未将搜索摘要入库。",
+  "jobs": []
+}

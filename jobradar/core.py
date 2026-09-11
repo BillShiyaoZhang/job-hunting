@@ -13,9 +13,9 @@ from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 ROOT = Path(__file__).resolve().parents[1]
-ADAPTERS = {"greenhouse", "lever", "rss", "jsonld", "codex"}
+ADAPTERS = {"greenhouse", "lever", "rss", "jsonld", "codex", "tencent", "remotive"}
 SEARCH_KEYS = {"keywords", "exclude_keywords", "locations"}
-STRATEGY_KEYS = SEARCH_KEYS | {"keyword_mode", "search_fields", "max_age_days", "stale_after_days", "max_results", "timeout_seconds", "request_delay_seconds", "retries", "max_pages"}
+STRATEGY_KEYS = SEARCH_KEYS | {"keyword_mode", "search_fields", "max_age_days", "stale_after_days", "max_results", "timeout_seconds", "request_delay_seconds", "retries", "max_pages", "min_interval_hours"}
 FIELDS = {"title", "company", "location", "tags", "description"}
 
 
@@ -111,7 +111,7 @@ def check_strategy(value, label):
         string_list(value["search_fields"], "search_fields")
         if not value["search_fields"] or set(value["search_fields"]) - FIELDS:
             raise ValueError("search_fields 包含未知字段或为空")
-    bounds = {"max_age_days": (1, 3650), "stale_after_days": (1, 365), "max_results": (1, 1000), "timeout_seconds": (1, 120), "request_delay_seconds": (0, 60), "retries": (0, 5), "max_pages": (1, 20)}
+    bounds = {"max_age_days": (1, 3650), "stale_after_days": (1, 365), "max_results": (1, 1000), "timeout_seconds": (1, 120), "request_delay_seconds": (0, 60), "retries": (0, 5), "max_pages": (1, 20), "min_interval_hours": (0, 168)}
     for key, (low, high) in bounds.items():
         if key in value:
             v = value[key]
@@ -129,7 +129,8 @@ def validate_config(config):
     if not isinstance(config["search"], dict) or set(config["search"]) != SEARCH_KEYS:
         raise ValueError("search 需要 keywords/exclude_keywords/locations")
     check_strategy(config["search"], "search")
-    if not isinstance(config["defaults"], dict) or set(config["defaults"]) != STRATEGY_KEYS - SEARCH_KEYS:
+    required_defaults = STRATEGY_KEYS - SEARCH_KEYS - {"min_interval_hours"}
+    if not isinstance(config["defaults"], dict) or not required_defaults <= config["defaults"].keys() or config["defaults"].keys() - (STRATEGY_KEYS - SEARCH_KEYS):
         raise ValueError("defaults 缺少或包含未知策略字段")
     check_strategy(config["defaults"], "defaults")
     if not isinstance(config["sources"], list):
@@ -171,7 +172,7 @@ def load_config(path=None):
 
 def strategy(config, source):
     # Lists replace lists, including an explicit [] to clear global filtering.
-    return {**copy.deepcopy(config["defaults"]), **copy.deepcopy(config["search"]), **copy.deepcopy(source.get("strategy", {}))}
+    return {"min_interval_hours": 0, **copy.deepcopy(config["defaults"]), **copy.deepcopy(config["search"]), **copy.deepcopy(source.get("strategy", {}))}
 
 
 def normalize(raw, source, now=None):

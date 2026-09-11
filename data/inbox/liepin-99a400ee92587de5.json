@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_id": "liepin",
+  "collected_at": "2026-09-11T02:50:29Z",
+  "status": "blocked",
+  "coverage": "partial",
+  "message": "首轮原文核验：立邦 AI Agent 详情跳转验证码；另一岗位仅得到旧搜索快照，无法确认当前状态。未导入未经当前原文核验的岗位。",
+  "jobs": []
+}

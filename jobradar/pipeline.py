@@ -1,6 +1,8 @@
 """CLI orchestration, inbox contract and deterministic static publishing."""
 from __future__ import annotations
 
+import hashlib
+import json
 from datetime import timedelta
 from pathlib import Path
 
@@ -89,6 +91,7 @@ def collect(config, data_dir=None, inbox=None, fetch_factory=Fetcher, now=None):
     previous = read_json(data_dir / "jobs.json", {"jobs": []})
     if previous.get("jobs"):
         validate_dataset(previous)
+    history = read_json(data_dir / "runs/history.json", [])
     incoming, outcomes = [], []
     for source in config["sources"]:
         outcome = {"source_id": source["id"], "name": source["name"], "adapter": source["adapter"], "status": "disabled", "found": 0, "accepted": 0, "message": "未启用", "coverage": "partial"}
@@ -96,7 +99,14 @@ def collect(config, data_dir=None, inbox=None, fetch_factory=Fetcher, now=None):
         if not source["enabled"]:
             continue
         rules = strategy(config, source)
+        fingerprint = hashlib.sha256(json.dumps({"source": source, "strategy": rules}, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:20]
+        outcome["config_fingerprint"] = fingerprint
         try:
+            if source["adapter"] != "codex" and rules["min_interval_hours"] and previous.get("demo") is False:
+                cached = next((o for r in history for o in r.get("sources", []) if o.get("source_id") == source["id"] and o.get("config_fingerprint") == fingerprint and o.get("status") in {"ok", "partial", "cached"} and o.get("observed_at")), None)
+                if cached and timedelta(0) <= now - date(cached["observed_at"]) < timedelta(hours=rules["min_interval_hours"]):
+                    outcome.update(status="cached", found=cached["found"], accepted=cached["accepted"], observed_at=cached["observed_at"], message=f"沿用近期结果；最低抓取间隔 {rules['min_interval_hours']} 小时，保留原核验时间")
+                    continue
             if source["adapter"] == "codex":
                 relevant = [b for b in batches if b[1]["id"] == source["id"]]
                 if not relevant:
@@ -118,7 +128,7 @@ def collect(config, data_dir=None, inbox=None, fetch_factory=Fetcher, now=None):
                         errors += 1
                 if rows and not jobs:
                     raise ValueError("所有岗位均未通过字段校验")
-                bounded = source["adapter"] == "lever" and len(rows) >= rules["max_pages"] * 100 or source["adapter"] == "jsonld" and len(source["urls"]) > rules["max_pages"]
+                bounded = getattr(rows, "truncated", False) or source["adapter"] == "lever" and len(rows) >= rules["max_pages"] * 100 or source["adapter"] == "jsonld" and len(source["urls"]) > rules["max_pages"]
                 outcome.update(status="partial" if errors or bounded else "ok", message=f"已读取 {len(rows)} 条；无效 {errors} 条" + ("；达到页数上限" if bounded else ""), observed_at=stamp(now))
             outcome["found"] = len(jobs)
             # Newest observations win and old inbox files cannot overwrite fresh facts.
@@ -141,11 +151,10 @@ def collect(config, data_dir=None, inbox=None, fetch_factory=Fetcher, now=None):
         except (ValueError, TypeError, KeyError, AttributeError, OSError) as exc:
             outcome.update(status="error", message=f"{type(exc).__name__}: {str(exc)[:300]}")
     jobs = merge_jobs(previous["jobs"], incoming, config, now)
-    successful = any(o["status"] in {"ok", "partial"} for o in outcomes)
+    successful = any(o["status"] in {"ok", "partial", "cached"} for o in outcomes)
     trouble = any(o["status"] in {"error", "blocked", "pending", "stale", "partial"} for o in outcomes)
     run = {"schema_version": 1, "started_at": stamp(now), "finished_at": stamp(), "mode": "live", "status": "partial" if successful and trouble else "ok" if successful else "error", "total_jobs": len(jobs), "sources": outcomes}
     write_json(data_dir / "runs/latest.json", run)
-    history = read_json(data_dir / "runs/history.json", [])
     write_json(data_dir / "runs/history.json", ([run] + history)[:30])
     dataset = {"schema_version": 1, "generated_at": stamp(now), "demo": False, "jobs": jobs}
     validate_dataset(dataset)
