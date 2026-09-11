@@ -2,7 +2,7 @@
 
 可托管在 **GitHub Pages** 的招聘岗位整合站点，配套 **GitHub Actions + Codex 定时任务** 数据流水线。前端是原生 HTML/CSS/JavaScript，后端使用 Python 标准库，无数据库、无付费 API 依赖、无需 npm install。
 
-**当前交付状态：仅本地准备，未部署，未创建远程仓库，未启用定时任务。** 所有招聘来源默认关闭；自带 12 个明确标记的虚构岗位用于预览。正式构建会拒绝示例数据。
+**运行状态：已上线真实数据。** [打开工作雷达](https://billshiyaozhang.github.io/job-hunting/)。私有源码仓库为 `BillShiyaoZhang/job-hunting`；仅 `dist/` 发布到公开网页。默认范围：中国大陆技术岗，兼顾全球/亚洲可申请远程岗。GitHub Actions 每日北京时间 09:37 刷新；Codex 每日 09:10 核验受支持的浏览器来源并交接批次。详见 [运行说明](docs/automation.md)。
 
 ## 本地打开
 
@@ -28,9 +28,9 @@ python -m http.server 8765 --bind 127.0.0.1 --directory dist
 - **岗位发现**：关键词搜索、地点/来源/远程方式/状态筛选、排序、分页、岗位详情和原文跳转。
 - **招聘来源**：添加或编辑来源、启停开关、接口参数、来源专属检索策略。
 - **检索配置**：关键词、排除词、地点、任意/全部匹配、检索字段、结果与页数上限、时效、超时、重试和请求间隔；支持 JSON 导入导出。
-- **数据流水线**：Greenhouse、Lever、RSS/Atom、JSON-LD 职位页、Codex 核验批次；数据校验、URL 去重、来源溯源、旧批次重放保护、失败保留和复核期限。
+- **数据流水线**：腾讯官网、Greenhouse、Lever、Remotive、RSS/Atom、JSON-LD 职位页、Codex 核验批次；数据校验、URL 去重、来源溯源、旧批次重放保护、失败保留和复核期限。
 - **运行记录**：每个来源的采集状态、读取/入选数量和问题说明，保留最近 30 次记录。
-- **自动化准备**：只读 CI、带开关的刷新工作流、单独手动发布工作流、Codex 定时任务提示词及文件协议。
+- **自动化运行**：只读 CI、每日刷新工作流、手动发布工作流、Codex 定时任务及专用副本批次推送。
 
 网页中的配置保存为**浏览器本地草稿**，不会更改 GitHub 仓库或启动采集。导出 `search.json`，替换仓库的 `config/search.json`，再运行校验，才能供后端采用。不要把密码、Cookie 或令牌放入配置；构建后的配置公开可读。
 
@@ -68,17 +68,17 @@ flowchart LR
     C[仓库检索配置] --> A[GitHub Actions：公开接口 / RSS]
     C --> X[Codex 定时任务：浏览器检索与核验]
     X --> I[结构化 inbox JSON]
-    I --> G[本地审阅 / PR 合并 / 授权后推送]
+    I --> G[专用副本校验与授权推送]
     G --> P[Python 校验、过滤、去重与时效处理]
     A --> P
     P --> D[data/jobs.json + 运行记录]
     D --> S[dist 静态站点]
-    S --> O[未来显式开启 Pages 发布]
+    S --> O[GitHub Pages 公开网页]
 ```
 
 两种调度通过仓库中的文件衔接。Codex 桌面任务并非由 GitHub Actions 内置唤醒；本地任务需要设备和 App 保持运行。[Codex 官方定时任务文档](https://learn.chatgpt.com/docs/automations?surface=app)
 
-`refresh.yml` 在同一次运行中采集、提交数据、构建，并在未来打开发布开关后部署该次产物。它不会依赖机器人提交再触发另一次 push 工作流，因为 `GITHUB_TOKEN` 的 push 不会产生这种触发。[GitHub 官方说明](https://docs.github.com/en/actions/concepts/security/github_token)
+`refresh.yml` 在同一次运行中采集、提交数据、构建并部署该次产物。它不会依赖机器人提交再触发另一次 push 工作流，因为 `GITHUB_TOKEN` 的 push 不会产生这种触发。[GitHub 官方说明](https://docs.github.com/en/actions/concepts/security/github_token)
 
 ## 文件入口
 
@@ -92,9 +92,10 @@ flowchart LR
 | `data/runs/` | 最新运行与最近 30 次历史 |
 | `.github/workflows/` | CI、数据刷新与手动 Pages 发布 |
 | `automation/codex-task.md` | 可复制到 Codex 的完整定时任务提示词 |
-| `automation/task-preset.json` | 尚未创建的任务参数备忘，不会自行执行 |
+| `automation/task-preset.json` | 已启用任务的参数与 ID 记录；实际由 Codex 管理 |
+| `scripts/sync_inbox.py` | 在专用副本中校验并推送 Codex 批次，不包含用户无关改动 |
 | `docs/configuration.md` | 配置字段、来源接入及覆盖规则 |
-| `docs/automation.md` | 衔接协议、未来启用、权限与排错 |
+| `docs/automation.md` | 当前运行状态、衔接协议、权限与排错 |
 | `docs/verification.md` | 已执行验证及未验证范围 |
 
-公开接口适配器已通过离线固定响应测试。BOSS、猎聘仅提供可配置的 Codex 检索入口，不宣称支持直接爬取；登录、验证码或访问限制会记录为受阻。真实站点可用性需要在填入目标来源后验证。
+腾讯、Flexport、Xsolla、Remotive 已完成真实采集，首轮入选 116 条。BOSS、猎聘在首轮原文核验中受阻，记录为 blocked，不会用搜索摘要充数。接口格式或访问条件可能改变，请查看运行记录。没有申请或购买 API Key，现有 Actions 额外支出预算为 $0，超额停止；不要提高该预算。

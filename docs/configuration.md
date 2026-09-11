@@ -47,12 +47,25 @@ defaults + search + source.strategy
 | `request_delay_seconds` | 0–60，可为小数；同一来源请求之间的最低间隔 |
 | `retries` | 0–5，暂时性网络错误、429 和部分 5xx 的重试次数 |
 | `max_pages` | 1–20，Lever API 页数 / JSON-LD URL 数 / Codex 浏览页数上限；Greenhouse 和 RSS 为单次请求 |
+| `min_interval_hours` | 0–168，成功采集后的最短重新请求间隔；0 为关闭冷却。旧配置缺省为 0。按来源与最终策略的指纹缓存；配置改变、停用或失败不会误用更早的结果。缓存保留原核验时间。 |
 
 除请求间隔外，数值字段必须是整数。未知字段会报错，以免拼写错误导致策略静默失效。
 
 API 获取公开列表后在本地过滤；不能把这些关键词参数理解为所有第三方接口都支持服务端全文检索。BOSS、猎聘等 Codex 查询会展开 `query_template` 的 `{keyword}` 和 `{location}`，最终仍按完整策略复核。
 
 ## 可接入的来源
+
+### 腾讯官网（已启用）
+
+`adapter: "tencent"` 使用腾讯官网当前公开招聘列表接口，无需账号或密钥。每页 50 条，按 `max_pages` 保守读取；当前默认 4 页、最多入选 100 条。国家/城市来自原文字段，技术词在标题和标签中筛选。`LastUpdateTime` 保存为原文更新日，发布日期保持未知。
+
+这是官网页面接口，并非有长期稳定性承诺的开发者 API。响应结构异常会报错并保留历史，不绕过访问限制。[腾讯招聘官网](https://careers.tencent.com/)
+
+### Remotive 免费远程 API（已启用）
+
+`adapter: "remotive"` 从免费公开接口读取岗位。当前仅保留 Worldwide/China/APAC/Asia 范围，至少间隔 24 小时才再次请求；推送 Codex 批次触发额外工作流时沿用近期结果，不增加 API 请求。
+
+保留 Remotive 名称和原始岗位链接作为归因。免费数据约延迟 24 小时，不能保证实时；具体地区和用工限制以原文为准。不用职位列表要求注册或邮箱，也不向第三方招聘平台转售或同步。[Remotive 官方使用说明](https://github.com/remotive-com/remote-jobs-api)
 
 ### Greenhouse
 

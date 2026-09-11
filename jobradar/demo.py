@@ -24,7 +24,7 @@ def create_demo(config, force=False):
     ]
     jobs = []
     for i, (title, company, location, workplace, salary, tags, source_id) in enumerate(rows):
-        source = next(s for s in config["sources"] if s["id"] == source_id)
+        source = next((s for s in config["sources"] if s["id"] == source_id), config["sources"][i % len(config["sources"])] if config["sources"] else {"id": "demo", "name": "演示来源"})
         raw = {"title": title, "company": company, "location": location, "workplace": workplace, "salary": salary, "tags": tags, "employment_type": "全职", "url": f"https://example.com/jobs/demo-{i+1}", "published_at": stamp(now - timedelta(days=i // 2)), "demo": True, "description": f"这是用于功能预览的虚构岗位，不代表 {source['name']} 上的真实招聘信息。参与{tags[0]}相关产品的设计与建设，与产品、设计和研发团队协作，关注用户体验和交付质量。所有公司、薪资和岗位信息均为示例。"}
         jobs.append(normalize(raw, source, now - timedelta(hours=i)))
     dataset = {"schema_version": 1, "generated_at": stamp(now), "demo": True, "jobs": jobs}

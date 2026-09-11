@@ -1,12 +1,12 @@
 # 工作雷达：Codex 定时任务提示词
 
-以下提示词可以在未来创建项目定时任务时使用。当前交付**尚未创建或启用**任务。默认交接方式为本地文件；如需自动提交 PR 或推送，先按 `docs/automation.md` 完成相应授权和认证，再明确修改提示词末尾的交接模式。
+用户已明确授权每日 09:10（Asia/Shanghai）执行核验并向私有仓库 `BillShiyaoZhang/job-hunting` 推送本轮岗位批次。GitHub Actions 每日 09:37 及收到 inbox 推送时处理数据，Pages 公开展示静态结果。禁止扩大目的仓库或提高零额外支出预算。
 
 ---
 
 在当前“工作雷达”项目中核验启用的招聘来源，按照以下流程完成本轮任务。
 
-先阅读 `AGENTS.md`、`config/search.json`、`docs/configuration.md`、`docs/automation.md`，再读取 `data/jobs.json` 与最近一次运行记录。运行 `python -m jobradar validate` 和 `python -m jobradar plan`。Windows 如果 Python 不在 PATH，使用 `scripts/local.ps1` 或 Codex 已配置的 Python 运行时；不要改动用户的全局环境。
+先在 `C:/Users/zhang/Developer/job-hunting` 阅读 `AGENTS.md`，运行 `python -X utf8 scripts/sync_inbox.py --prepare`。这会将 `.local/codex-sync` 专用副本快进同步到已授权仓库的 main。随后在该副本读取 `config/search.json`、`docs/configuration.md`、`docs/automation.md`、`data/jobs.json`、最新运行记录，并运行 `python -X utf8 -m jobradar validate` 和 `python -X utf8 -m jobradar plan`。Windows 如果 Python 不在 PATH，使用 Codex 已配置运行时（通常为用户目录下 `.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`），不要改动全局环境。
 
 只处理 `enabled: true` 且 `adapter: "codex"` 的来源。没有此类来源时不创建空批次，保持安静并结束。按 plan 输出的最终策略执行：来源覆盖优先于全局设置，空数组表示不限；遵守关键词匹配方式、排除词、地点、检索字段、最多页数和最多结果数。应用来源 notes 中与检索相关的说明。
 
@@ -48,10 +48,8 @@
 
 允许 status 为 ok、blocked、error。受阻或失败批次必须 jobs=[]，message 说明原因。检索成功但没有匹配岗位使用 ok + jobs=[]。coverage 始终为 partial，不能宣称已穷尽整个网站。不要把虚构例子或模板提交为真实岗位。
 
-先写到 `.local/` 下的唯一暂存文件，然后运行 `python -m jobradar import <文件路径>`；导入命令生成内容哈希命名的 `data/inbox/<source>-<hash>.json`，不会自动采集、提交或部署。随后运行 `python -m jobradar validate`。验证失败时修复自己的新批次或记录失败，不能修改其他批次以隐藏错误。
+先将每个来源的本轮批次写到主项目 `.local/` 下的唯一暂存文件。不要直接修改主工作区或专用副本中其他文件。在主项目运行 `python -X utf8 scripts/sync_inbox.py --batch <本轮批次1绝对路径> <本轮批次2绝对路径>`。该脚本在专用副本校验与导入批次，只暂存本轮 inbox 文件，创建提交并普通推送到已授权仓库；相同批次重复运行不会新建提交。验证失败时仅修复自己的新批次，不能修改其他批次以隐藏错误。
 
-交接模式：**local（当前默认）**。只生成和校验本地批次，在有新增岗位、来源状态变化或需要人工处理时，报告批次路径及简短结果。没有有意义的变化时保持安静。不要 git commit、git push、创建 PR、启用工作流或部署。不要改变来源配置、流水线代码或其他用户文件。
+交接模式：**已授权的专用副本直接推送**。仅使用现有 Git 认证，不创建或保存新密钥。禁止 force push、stash、清理用户改动、创建 PR、改变来源配置、修改程序或提高预算。专用副本有遗留改动、未推送提交或锁文件时停止交接并报告，不能自动删除以掩盖错误。分支保护或远程竞争导致失败时保留批次供处理。
 
-如果用户将交接模式明确改为 PR：先确认工作区干净、远程仓库已配置及 GitHub 认证可用；使用独立 worktree 和本轮唯一分支，只提交本轮生成的 inbox 文件，建立审阅 PR，说明采集范围。不要自动合并；合并后才会进入正式数据。若工作区已有无关改动，不 stash、不清理、不包含它们，保留本地批次并报告。
-
-如果用户将交接模式明确改为已授权的直接推送：仅使用为本任务准备的干净专用 checkout，先快进同步默认分支；校验后只提交本轮 inbox 文件并普通 push。禁止 force push。分支保护或远程竞争导致失败时保留本地结果并报告，不能绕过保护。仓库的刷新开关必须已由用户显式开启，才能由后续 Actions 处理批次。
+推送后检查对应 Actions 是否完成，并核对线上数据更新时间；不要连续触发额外刷新。只在新增匹配岗位、来源状态变化、运行失败或需要用户处理时通知。来源仍受阻或其他状态无有意义变化时保持安静，不发送例行进度消息。不得把脚本退出成功以外的结果当作交接完成，也不得声称睡眠中的本机能继续执行任务。

@@ -1,3 +1,17 @@
+# 真实运行验收 · 2026-09-11
+
+- GitHub [首轮刷新及部署](https://github.com/BillShiyaoZhang/job-hunting/actions/runs/34556797346)成功；[同提交 CI](https://github.com/BillShiyaoZhang/job-hunting/actions/runs/34556797332)成功。
+- 线上主页 HTTP 200；线上 jobs.json 为 demo=false，包含 116 条真实岗位（腾讯 100、Flexport 7、Xsolla 5、Remotive 4）。
+- 最新本地测试：Python 22 项、Node 6 项，共 28 项通过。新增腾讯、Remotive、地区限制、冷却缓存、配置回切，以及多批次校验失败后可修正重试的回归测试。
+- Codex 专用副本和同批次幂等交接已实测；同批次结果为 unchanged，没有重复提交。
+- Codex 每日 09:10 的 heartbeat 已由官方工具创建为 ACTIVE，ID 见 task-preset.json；未来到点无人值守执行仍依赖本机/App/认证可用，尚未等待次日的实际触发。
+- 已确认现有免费 Pro 和 Actions 额外 $0/Stop usage Yes；未购买服务或修改源仓库私有状态。
+- 未绕过 BOSS/猎聘的验证限制；3 条 ATS 原始记录未通过规范化而跳过，逐源统计在运行记录中公开显示。
+
+以下保留初始“仅准备、未部署”阶段的验证记录，作为历史记录，不代表当前运行状态。
+
+---
+
 # 交付验证记录
 
 验证日期：2026-09-11。本次只在本地执行，没有部署、推送或触发真实定时任务。
