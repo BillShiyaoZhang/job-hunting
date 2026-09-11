@@ -1,0 +1,72 @@
+[
+  {
+    "schema_version": 1,
+    "started_at": "2026-09-11T02:18:59Z",
+    "finished_at": "2026-09-11T02:18:59Z",
+    "mode": "demo",
+    "status": "demo",
+    "total_jobs": 12,
+    "sources": [
+      {
+        "source_id": "greenhouse",
+        "name": "Greenhouse",
+        "adapter": "greenhouse",
+        "status": "disabled",
+        "found": 0,
+        "accepted": 0,
+        "coverage": "partial",
+        "message": "未执行真实采集"
+      },
+      {
+        "source_id": "lever",
+        "name": "Lever",
+        "adapter": "lever",
+        "status": "disabled",
+        "found": 0,
+        "accepted": 0,
+        "coverage": "partial",
+        "message": "未执行真实采集"
+      },
+      {
+        "source_id": "remote-rss",
+        "name": "远程工作 RSS",
+        "adapter": "rss",
+        "status": "disabled",
+        "found": 0,
+        "accepted": 0,
+        "coverage": "partial",
+        "message": "未执行真实采集"
+      },
+      {
+        "source_id": "boss",
+        "name": "BOSS 直聘",
+        "adapter": "codex",
+        "status": "disabled",
+        "found": 0,
+        "accepted": 0,
+        "coverage": "partial",
+        "message": "未执行真实采集"
+      },
+      {
+        "source_id": "liepin",
+        "name": "猎聘",
+        "adapter": "codex",
+        "status": "disabled",
+        "found": 0,
+        "accepted": 0,
+        "coverage": "partial",
+        "message": "未执行真实采集"
+      },
+      {
+        "source_id": "company-careers",
+        "name": "企业招聘官网",
+        "adapter": "jsonld",
+        "status": "disabled",
+        "found": 0,
+        "accepted": 0,
+        "coverage": "partial",
+        "message": "未执行真实采集"
+      }
+    ]
+  }
+]

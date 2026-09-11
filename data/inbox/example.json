@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_id": "boss",
+  "collected_at": "2026-09-11T01:00:00Z",
+  "status": "blocked",
+  "coverage": "partial",
+  "message": "示例协议：页面需要登录，未取得可核验岗位。本文件被流水线忽略。",
+  "jobs": []
+}

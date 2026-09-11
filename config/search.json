@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "project": {"name": "工作雷达", "description": "把值得关注的机会，放在一起。"},
+  "search": {
+    "keywords": ["前端", "Frontend", "React", "Python", "产品经理", "Product", "AI", "Engineer"],
+    "exclude_keywords": ["外包"],
+    "locations": []
+  },
+  "defaults": {
+    "keyword_mode": "any",
+    "search_fields": ["title", "tags", "description"],
+    "max_age_days": 45,
+    "stale_after_days": 14,
+    "max_results": 100,
+    "timeout_seconds": 20,
+    "request_delay_seconds": 1,
+    "retries": 2,
+    "max_pages": 3
+  },
+  "sources": [
+    {"id": "greenhouse", "name": "Greenhouse", "adapter": "greenhouse", "enabled": false, "board": "your-board-token", "company": "填写公司名", "strategy": {}, "notes": "填写目标公司的公开招聘板 token 后启用。"},
+    {"id": "lever", "name": "Lever", "adapter": "lever", "enabled": false, "board": "your-company", "region": "global", "company": "填写公司名", "strategy": {"keywords": ["Engineer", "Product"], "keyword_mode": "any"}, "notes": "支持 global / eu；使用公开职位接口。"},
+    {"id": "remote-rss", "name": "远程工作 RSS", "adapter": "rss", "enabled": false, "url": "https://weworkremotely.com/remote-jobs.rss", "strategy": {"keywords": ["React", "Python", "Frontend"], "locations": []}, "notes": "启用前确认订阅地址可用及来源使用要求。"},
+    {"id": "boss", "name": "BOSS 直聘", "adapter": "codex", "enabled": false, "url": "https://www.zhipin.com/", "query_template": "site:zhipin.com {keyword} {location}", "strategy": {"keywords": ["前端", "产品经理"], "max_results": 30}, "notes": "由 Codex 查阅可访问的职位原文；需要登录、验证码或访问受限时记录 blocked，不绕过。"},
+    {"id": "liepin", "name": "猎聘", "adapter": "codex", "enabled": false, "url": "https://www.liepin.com/", "query_template": "site:liepin.com {keyword} {location}", "strategy": {"max_results": 30}, "notes": "由 Codex 检索并核验原文，未知信息留空。"},
+    {"id": "company-careers", "name": "企业招聘官网", "adapter": "jsonld", "enabled": false, "urls": ["https://example.com/careers/job"], "strategy": {}, "notes": "填写带 schema.org JobPosting JSON-LD 的具体职位页；不会自动遍历列表页。"}
+  ]
+}

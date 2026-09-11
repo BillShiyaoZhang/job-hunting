@@ -1,0 +1,10 @@
+{
+  "name": "工作雷达：核验招聘岗位",
+  "status": "NOT_CREATED",
+  "execution": "Codex desktop project scheduled task",
+  "suggested_schedule": "每天 09:10 和 21:10",
+  "timezone": "Asia/Shanghai",
+  "prompt_file": "automation/codex-task.md",
+  "handoff_mode": "local",
+  "notes": "仅为准备好的参数备忘，不是 Codex 内部 automation.toml，不会自动注册或运行。未来启用时使用 Codex 官方定时任务界面或工具。"
+}

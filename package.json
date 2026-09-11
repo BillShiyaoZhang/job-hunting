@@ -1,0 +1,11 @@
+{
+  "name": "job-radar",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static job aggregation dashboard and configurable Python collection pipeline",
+  "scripts": {
+    "test": "node --test tests/frontend.test.mjs",
+    "check": "node --check dist/app.mjs && node --check dist/lib.mjs"
+  },
+  "engines": {"node": ">=20"}
+}

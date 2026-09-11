@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {filterJobs,validateConfig,safeLink,splitList} from '../dist/lib.mjs';
+const jobs=[{id:'1',title:'前端 Engineer',company:'Alpha',description:'React and Python',tags:['React'],source_id:'a',source_ids:['a','b'],location:'上海',workplace:'remote',status:'active',first_seen_at:'2026-09-11T00:00:00Z',published_at:null},{id:'2',title:'Product Designer',company:'Beta',description:'Research',tags:['Figma'],source_id:'b',source_ids:['b'],location:'北京',workplace:'onsite',status:'stale',first_seen_at:'2026-09-10T00:00:00Z',published_at:'2026-09-09T00:00:00Z'}];
+test('Chinese and case-insensitive multi-term search intersect with filters',()=>{assert.equal(filterJobs(jobs,{query:'前端 REACT',sources:['b'],workplaces:['remote'],status:'active'}).length,1);assert.equal(filterJobs(jobs,{query:'react',location:'北京'}).length,0);});
+test('Unknown publication dates sort after known dates',()=>assert.equal(filterJobs(jobs,{sort:'published'})[0].id,'2'));
+test('Status filters and empty results are intentional',()=>{assert.equal(filterJobs(jobs,{status:'stale'}).length,1);assert.equal(filterJobs(jobs,{query:'unmatched'}).length,0);});
+test('Unsafe job links are never offered to users',()=>{for(const url of ['javascript:alert(1)','http://localhost./','http://127.1/','http://192.168.1.1/','https://name:pass@example.com/'])assert.equal(safeLink(url),null);assert.ok(safeLink('https://example.com/job?id=12'));});
+test('Config accepts a valid fixture and rejects unsafe or duplicate sources',()=>{const original=JSON.parse(readFileSync(new URL('./fixtures/search.json',import.meta.url)));validateConfig(original);const duplicate=structuredClone(original);duplicate.sources.push(duplicate.sources[0]);assert.throws(()=>validateConfig(duplicate));const unsafe=structuredClone(original);unsafe.sources[0].api_key='secret';assert.throws(()=>validateConfig(unsafe));const fractional=structuredClone(original);fractional.defaults.max_pages=1.1;assert.throws(()=>validateConfig(fractional));});
+test('Keyword entry accepts Chinese commas and newlines',()=>assert.deepEqual(splitList('前端，React\nPython, '),['前端','React','Python']));

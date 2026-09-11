@@ -1,0 +1,100 @@
+name: Refresh job data
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/inbox/**'
+      - 'config/search.json'
+  # Disabled until you deliberately enable scheduling.
+  # schedule:
+  #   - cron: '37 0,12 * * *'  # 08:37 / 20:37 Asia/Shanghai
+
+permissions:
+  contents: read
+concurrency:
+  group: jobradar-production
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: vars.ENABLE_JOB_REFRESH == 'true' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Record this run's start
+        run: python scripts/workflow_report.py start
+      - name: Validate inputs
+        id: validate
+        run: python -m jobradar validate
+      - name: Run offline checks before production collection
+        id: tests
+        run: |
+          python -m unittest discover -s tests -v
+          node --check dist/app.mjs
+          node --check dist/lib.mjs
+          node --test tests/frontend.test.mjs
+      - name: Collect public sources and merge Codex batches
+        id: collect
+        run: python -m jobradar collect
+      - name: Build real data only
+        id: build
+        run: |
+          python -m jobradar build --production
+          python scripts/check_site.py
+      - name: Save only generated data
+        id: save
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/jobs.json data/runs/latest.json data/runs/history.json dist/data/jobs.json dist/data/config.json dist/data/runs.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh job data'
+            git push
+          fi
+      - name: Configure Pages (opt-in)
+        id: configure_pages
+        if: vars.ENABLE_PAGES_DEPLOY == 'true'
+        uses: actions/configure-pages@v5
+      - name: Upload current build (opt-in)
+        id: upload_pages
+        if: vars.ENABLE_PAGES_DEPLOY == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Record current workflow outcomes
+        if: always()
+        env:
+          JOBRADAR_STEPS: ${{ toJSON(steps) }}
+        run: python scripts/workflow_report.py finish
+      - name: Attach this run's report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: collection-report
+          path: .local/workflow-report.json
+          retention-days: 14
+          if-no-files-found: warn
+  deploy:
+    needs: refresh
+    if: vars.ENABLE_PAGES_DEPLOY == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy this workflow's artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
