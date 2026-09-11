@@ -1,4 +1,6 @@
 export const adapters = {tencent:'腾讯官网公开招聘',greenhouse:'Greenhouse API',lever:'Lever API',remotive:'Remotive 免费远程 API',rss:'RSS / Atom',jsonld:'JSON-LD 职位页',codex:'Codex 浏览器检索'};
+export const viewLabels = {home:'首页',discover:'岗位发现',sources:'招聘来源',settings:'检索配置',runs:'运行记录'};
+export function resolveView(hash, current='home'){if(hash==='#main')return Object.hasOwn(viewLabels,current)?current:'home';const view=hash.replace(/^#/,'');return Object.hasOwn(viewLabels,view)?view:'home';}
 export const numeric = {max_age_days:['最大发布天数',1,3650],stale_after_days:['复核期限（天）',1,365],max_results:['每来源结果上限',1,1000],timeout_seconds:['请求超时（秒）',1,120],request_delay_seconds:['请求间隔（秒）',0,60],retries:['失败重试次数',0,5],max_pages:['最多检索页数',1,20],min_interval_hours:['最低抓取间隔（小时）',0,168]};
 const searchKeys=['keywords','exclude_keywords','locations'];
 const defaultKeys=['keyword_mode','search_fields',...Object.keys(numeric)];

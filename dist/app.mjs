@@ -1,29 +1,37 @@
-import {adapters,numeric,splitList,safeLink,validateConfig,filterJobs} from './lib.mjs';
+import {adapters,numeric,splitList,safeLink,validateConfig,filterJobs,viewLabels,resolveView} from './lib.mjs';
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const node=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
 const clone=v=>JSON.parse(JSON.stringify(v));
 const STORAGE='jobradar.config.v1';
 const state={jobs:[],config:null,original:null,runs:[],demo:false,page:1,filters:{query:'',location:'',workplaces:[],sources:[],status:'active',sort:'newest'}};
-const labels={discover:'岗位发现',sources:'招聘来源',settings:'检索配置',runs:'运行记录'};
+const labels=viewLabels;
 const statusLabels={cached:'沿用近期数据',ok:'已完成',partial:'部分完成',error:'采集失败',blocked:'访问受限',disabled:'未启用',pending:'等待采集',stale:'待复核',active:'可关注',expired:'已过期',demo:'示例预览'};
 const workLabels={remote:'远程办公',hybrid:'混合办公',onsite:'现场办公',unknown:'方式未注明'};
-let editing=null, toastTimer;
+let editing=null, toastTimer, currentView='home';
 function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5000);}
 function datetime(value){return value?new Intl.DateTimeFormat('zh-CN',{dateStyle:'medium',timeStyle:'short'}).format(new Date(value)):'未注明';}
 function relative(value){if(!value)return'发布日期未知';const days=Math.max(0,Math.floor((Date.now()-Date.parse(value))/86400000));return days===0?'今天':days===1?'昨天':`${days} 天前`;}
 function badge(status){return node('span',`status-badge ${status}`,statusLabels[status]||status);}
 function download(name,value){const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)+'\n'],{type:'application/json;charset=utf-8'}));const a=node('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-function navigate(){const view=location.hash.slice(1)||'discover';const name=Object.hasOwn(labels,view)?view:'discover';$$('.view').forEach(n=>n.hidden=n.id!==`view-${name}`);$$('[data-view]').forEach(n=>{n.classList.toggle('active',n.dataset.view===name);if(n.dataset.view===name)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current');});$('#breadcrumb').textContent=labels[name];document.title=`${state.config?.project.name||'工作雷达'} · ${labels[name]}`;}
+function navigate(){const name=resolveView(location.hash,currentView);const changed=name!==currentView;currentView=name;document.body.classList.toggle('home-mode',name==='home');$$('.view').forEach(n=>n.hidden=n.id!==`view-${name}`);$$('[data-view]').forEach(n=>{n.classList.toggle('active',n.dataset.view===name);if(n.dataset.view===name)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current');});$('#breadcrumb').textContent=labels[name];document.title=`${state.config?.project.name||'工作雷达'} · ${labels[name]}`;if(changed){window.scrollTo(0,0);$('#main').focus({preventScroll:true});}}
 function savedDraft(){try{return JSON.parse(localStorage.getItem(STORAGE)||'null');}catch{return null;}}
 function saveDraft(config){validateConfig(config);try{localStorage.setItem(STORAGE,JSON.stringify(config));}catch{toast('浏览器无法保存草稿，请立即导出配置。');}state.config=clone(config);$('#draft-banner').hidden=false;renderConfig();renderSources();renderStats();toast('已保存本地草稿；导出到仓库后，自动采集才会采用。');}
 async function readData(file){const response=await fetch(new URL(`./data/${file}`,import.meta.url),{cache:'no-store'});if(!response.ok)throw new Error(`读取 ${file} 失败（${response.status}）`);return response.json();}
 async function load(){
  $('#reload').disabled=true;
- try{const[data,config,runs]=await Promise.all([readData('jobs.json'),readData('config.json'),readData('runs.json')]);validateConfig(config);if(data.schema_version!==1||!Array.isArray(data.jobs))throw new Error('岗位数据格式无效');state.original=clone(config);let draft=savedDraft();if(draft){try{validateConfig(draft);}catch{draft=null;toast('保存的草稿格式无效，已读取仓库配置。');}}state.config=draft||config;state.jobs=data.jobs;state.demo=data.demo;state.runs=runs;$('#demo-banner').hidden=!data.demo;$('#draft-banner').hidden=!draft;$('#data-label').textContent=data.demo?'示例数据 · 自动化未启用':'静态数据快照';$('#updated-at').textContent=`数据生成于 ${datetime(data.generated_at)}`;$('#load-error').hidden=true;renderStats();renderFilters();renderJobs();renderConfig();renderSources();renderRuns();navigate();registerAgentTools();}
- catch(error){$('#load-error').hidden=false;$('#load-error').textContent=`无法载入站点数据：${error.message}。请先运行本地构建，再通过 HTTP 服务打开站点。`;$('#result-count').textContent='数据未加载';}
+ try{const[data,config,runs]=await Promise.all([readData('jobs.json'),readData('config.json'),readData('runs.json')]);validateConfig(config);if(data.schema_version!==1||!Array.isArray(data.jobs))throw new Error('岗位数据格式无效');state.original=clone(config);let draft=savedDraft();if(draft){try{validateConfig(draft);}catch{draft=null;toast('保存的草稿格式无效，已读取仓库配置。');}}state.config=draft||config;state.jobs=data.jobs;state.demo=data.demo;state.runs=runs;$('#demo-banner').hidden=!data.demo;$('#draft-banner').hidden=!draft;$('#data-label').textContent=data.demo?'示例数据 · 自动化未启用':'静态数据快照';$('#updated-at').textContent=`数据生成于 ${datetime(data.generated_at)}`;$('#load-error').hidden=true;renderStats();renderHome(data);renderFilters();renderJobs();renderConfig();renderSources();renderRuns();navigate();registerAgentTools();}
+ catch(error){$('#load-error').hidden=false;$('#load-error').textContent=`无法载入站点数据：${error.message}。请先运行本地构建，再通过 HTTP 服务打开站点。`;$('#result-count').textContent='数据未加载';$('#home-job-count').textContent='—';$('#home-source-count').textContent='—';$('#home-source-names').replaceChildren(node('span','','数据暂不可用'));$('#home-updated').textContent='请稍后刷新页面重试';}
  finally{$('#reload').disabled=false;}
 }
 function renderStats(){$('#nav-count').textContent=state.jobs.length;$('#stat-total').textContent=state.jobs.length;$('#stat-active').textContent=state.jobs.filter(j=>j.status==='active').length;$('#stat-remote').textContent=state.jobs.filter(j=>j.workplace==='remote'&&j.status==='active').length;$('#stat-sources').textContent=state.config.sources.length;$('#stat-enabled').textContent=`${state.config.sources.filter(s=>s.enabled).length} 个已启用`;}
+function renderHome(data){
+ const names=[...new Set(data.jobs.map(job=>job.source_name))];
+ $('#home-data-caption').textContent=data.demo?'示例岗位快照':'当前岗位快照';
+ $('#home-job-count').textContent=data.jobs.length;
+ $('#home-source-count').textContent=names.length;
+ $('#home-source-names').replaceChildren(...(names.length?names:['暂无已收录来源']).map(name=>node('span','',name)));
+ $('#home-updated').textContent=`数据更新于 ${datetime(data.generated_at)}`;
+}
 function renderFilters(){const location=$('#location');location.replaceChildren(node('option','','全部地点'));location.firstChild.value='';[...new Set(state.jobs.map(j=>j.location))].sort().forEach(v=>{const o=node('option','',v);o.value=v;location.append(o);});if(![...location.options].some(o=>o.value===state.filters.location))state.filters.location='';location.value=state.filters.location;const group=$('#source-filters');group.replaceChildren(node('legend','','招聘来源'));state.config.sources.forEach(s=>{const count=state.jobs.filter(j=>(j.source_ids||[j.source_id]).includes(s.id)).length;const label=node('label','check');const input=node('input');input.type='checkbox';input.name='source';input.value=s.id;input.checked=state.filters.sources.includes(s.id);input.addEventListener('change',applyFilters);label.append(input,document.createTextNode(s.name),node('span','',count));group.append(label);});$('#remote-count').textContent=state.jobs.filter(j=>j.workplace==='remote').length;}
 function applyFilters(){state.filters={query:$('#search').value,location:$('#location').value,workplaces:$$('[name=workplace]:checked').map(x=>x.value),sources:$$('[name=source]:checked').map(x=>x.value),status:$('#status').value,sort:$('#sort').value};state.page=1;renderJobs();}
 function resetFilters(){state.filters={query:'',location:'',workplaces:[],sources:[],status:'all',sort:'newest'};$('#search').value='';$('#location').value='';$('#status').value='all';$('#sort').value='newest';$$('[name=workplace],[name=source]').forEach(x=>x.checked=false);state.page=1;renderJobs();}
