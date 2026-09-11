@@ -238,6 +238,13 @@ class PipelineTests(unittest.TestCase):
             self.c['search']['keywords'] = ['React']
             collect(self.c, root, fetch_factory=factory, now=NOW + timedelta(hours=2))
             self.assertEqual(len(calls), 2)
+            self.c['search']['keywords'] = ['Python']
+            collect(self.c, root, fetch_factory=factory, now=NOW + timedelta(hours=3))
+            self.assertEqual(read_json(root/'jobs.json')['jobs'], [])
+            self.c['search']['keywords'] = ['React']
+            collect(self.c, root, fetch_factory=factory, now=NOW + timedelta(hours=4))
+            self.assertEqual(len(calls), 4)
+            self.assertEqual(len(read_json(root/'jobs.json')['jobs']), 1)
 
     def test_end_to_end_public_and_codex_to_static(self):
         for s in self.c['sources']:

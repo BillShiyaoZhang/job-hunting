@@ -103,8 +103,8 @@ def collect(config, data_dir=None, inbox=None, fetch_factory=Fetcher, now=None):
         outcome["config_fingerprint"] = fingerprint
         try:
             if source["adapter"] != "codex" and rules["min_interval_hours"] and previous.get("demo") is False:
-                cached = next((o for r in history for o in r.get("sources", []) if o.get("source_id") == source["id"] and o.get("config_fingerprint") == fingerprint and o.get("status") in {"ok", "partial", "cached"} and o.get("observed_at")), None)
-                if cached and timedelta(0) <= now - date(cached["observed_at"]) < timedelta(hours=rules["min_interval_hours"]):
+                cached = next((o for r in history for o in r.get("sources", []) if o.get("source_id") == source["id"]), None)
+                if cached and cached.get("config_fingerprint") == fingerprint and cached.get("status") in {"ok", "partial", "cached"} and cached.get("observed_at") and timedelta(0) <= now - date(cached["observed_at"]) < timedelta(hours=rules["min_interval_hours"]):
                     outcome.update(status="cached", found=cached["found"], accepted=cached["accepted"], observed_at=cached["observed_at"], message=f"沿用近期结果；最低抓取间隔 {rules['min_interval_hours']} 小时，保留原核验时间")
                     continue
             if source["adapter"] == "codex":
