@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_id": "boss",
+  "collected_at": "2026-09-12T01:13:44Z",
+  "status": "blocked",
+  "coverage": "partial",
+  "message": "本轮按日期轮换为算法/杭州，查询 site:zhipin.com/job_detail 算法 杭州。搜索仅发现旧列表线索；实际访问 1 个列表页面（网站页上限 3）：https://www.zhipin.com/zhaopin/31ce862fa9242ef20nR439S-EA~~/，跳转至 BOSS security.html 安全验证，页面标题为请稍候。已停止该来源，未核验到职位原文，未将搜索摘要入库，岗位 0 条。",
+  "jobs": []
+}

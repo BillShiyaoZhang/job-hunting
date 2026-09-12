@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source_id": "liepin",
+  "collected_at": "2026-09-12T01:13:24Z",
+  "status": "blocked",
+  "coverage": "partial",
+  "message": "查询 site:liepin.com/job 算法 杭州；实际打开 1 个职位页面（上限 3）：https://www.liepin.com/job/1985181289.shtml，返回猎聘安全中心并跳转至 safe.liepin.com 验证码页面，无法核验当前职位原文，已停止该来源。搜索摘要未作为岗位事实，核验岗位 0 条。",
+  "jobs": []
+}
