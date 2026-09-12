@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T01:14:42Z",
+  "generated_at": "2026-09-12T06:23:50Z",
   "demo": false,
   "jobs": [
     {
@@ -4678,7 +4678,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-09-11T03:00:49Z",
+      "last_seen_at": "2026-09-12T06:23:50Z",
       "source_id": "remotive",
       "source_name": "Remotive",
       "source_ids": [
@@ -4750,7 +4750,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-09-11T03:00:49Z",
+      "last_seen_at": "2026-09-12T06:23:50Z",
       "source_id": "remotive",
       "source_name": "Remotive",
       "source_ids": [
@@ -4829,7 +4829,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-09-11T03:00:49Z",
+      "last_seen_at": "2026-09-12T06:23:50Z",
       "source_id": "remotive",
       "source_name": "Remotive",
       "source_ids": [
@@ -4902,7 +4902,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-09-11T03:00:49Z",
+      "last_seen_at": "2026-09-12T06:23:50Z",
       "source_id": "remotive",
       "source_name": "Remotive",
       "source_ids": [
