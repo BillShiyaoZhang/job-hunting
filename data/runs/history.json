@@ -1,6 +1,88 @@
 [
   {
     "schema_version": 1,
+    "started_at": "2026-09-22T06:43:35Z",
+    "finished_at": "2026-09-22T06:43:47Z",
+    "mode": "live",
+    "status": "partial",
+    "total_jobs": 555,
+    "sources": [
+      {
+        "source_id": "tencent",
+        "name": "腾讯招聘",
+        "adapter": "tencent",
+        "status": "partial",
+        "found": 199,
+        "accepted": 100,
+        "message": "已读取 200 条；无效 1 条；达到页数上限；达到结果上限",
+        "coverage": "partial",
+        "config_fingerprint": "c7e92cb6471751d48adc",
+        "observed_at": "2026-09-22T06:43:35Z"
+      },
+      {
+        "source_id": "flexport",
+        "name": "Flexport 官网",
+        "adapter": "greenhouse",
+        "status": "ok",
+        "found": 196,
+        "accepted": 9,
+        "message": "已读取 196 条；无效 0 条",
+        "coverage": "partial",
+        "config_fingerprint": "e243e05c25bf93901356",
+        "observed_at": "2026-09-22T06:43:35Z"
+      },
+      {
+        "source_id": "xsolla",
+        "name": "Xsolla 官网",
+        "adapter": "lever",
+        "status": "partial",
+        "found": 179,
+        "accepted": 5,
+        "message": "已读取 181 条；无效 2 条",
+        "coverage": "partial",
+        "config_fingerprint": "c70b648dec584d176074",
+        "observed_at": "2026-09-22T06:43:35Z"
+      },
+      {
+        "source_id": "remotive",
+        "name": "Remotive",
+        "adapter": "remotive",
+        "status": "cached",
+        "found": 20,
+        "accepted": 7,
+        "message": "沿用近期结果；最低抓取间隔 24 小时，保留原核验时间",
+        "coverage": "partial",
+        "config_fingerprint": "86bc35e18fd62717253c",
+        "observed_at": "2026-09-21T06:59:02Z"
+      },
+      {
+        "source_id": "boss",
+        "name": "BOSS 直聘",
+        "adapter": "codex",
+        "status": "blocked",
+        "found": 0,
+        "accepted": 0,
+        "message": "本轮按日期轮换为算法/杭州，查询 site:zhipin.com/job_detail 算法 杭州。搜索仅发现旧列表线索；实际访问 1 个列表页面（网站页上限 3）：https://www.zhipin.com/zhaopin/31ce862fa9242ef20nR439S-EA~~/，跳转至 BOSS security.html 安全验证，页面标题为请稍候。已停止该来源，未核验到职位原文，未将搜索摘要入库，岗位 0 条。",
+        "coverage": "partial",
+        "config_fingerprint": "508d8c309fa39e87e99a",
+        "observed_at": "2026-09-12T01:13:44Z"
+      },
+      {
+        "source_id": "liepin",
+        "name": "猎聘",
+        "adapter": "codex",
+        "status": "blocked",
+        "found": 0,
+        "accepted": 0,
+        "message": "查询 site:liepin.com/job 算法 杭州；实际打开 1 个职位页面（上限 3）：https://www.liepin.com/job/1985181289.shtml，返回猎聘安全中心并跳转至 safe.liepin.com 验证码页面，无法核验当前职位原文，已停止该来源。搜索摘要未作为岗位事实，核验岗位 0 条。",
+        "coverage": "partial",
+        "config_fingerprint": "ef99e17579dfe51c1319",
+        "observed_at": "2026-09-12T01:13:24Z"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
     "started_at": "2026-09-21T06:59:02Z",
     "finished_at": "2026-09-21T06:59:14Z",
     "mode": "live",
