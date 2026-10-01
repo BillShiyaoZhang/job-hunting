@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "started_at": "2026-09-30T07:17:26Z",
-  "finished_at": "2026-09-30T07:17:37Z",
+  "started_at": "2026-10-01T07:40:57Z",
+  "finished_at": "2026-10-01T07:41:09Z",
   "mode": "live",
   "status": "partial",
-  "total_jobs": 723,
+  "total_jobs": 735,
   "sources": [
     {
       "source_id": "tencent",
@@ -16,31 +16,31 @@
       "message": "已读取 200 条；无效 0 条；达到页数上限；达到结果上限",
       "coverage": "partial",
       "config_fingerprint": "c7e92cb6471751d48adc",
-      "observed_at": "2026-09-30T07:17:26Z"
+      "observed_at": "2026-10-01T07:40:57Z"
     },
     {
       "source_id": "flexport",
       "name": "Flexport 官网",
       "adapter": "greenhouse",
       "status": "ok",
-      "found": 208,
+      "found": 204,
       "accepted": 9,
-      "message": "已读取 208 条；无效 0 条",
+      "message": "已读取 204 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "e243e05c25bf93901356",
-      "observed_at": "2026-09-30T07:17:26Z"
+      "observed_at": "2026-10-01T07:40:57Z"
     },
     {
       "source_id": "xsolla",
       "name": "Xsolla 官网",
       "adapter": "lever",
       "status": "partial",
-      "found": 173,
+      "found": 172,
       "accepted": 5,
-      "message": "已读取 175 条；无效 2 条",
+      "message": "已读取 174 条；无效 2 条",
       "coverage": "partial",
       "config_fingerprint": "c70b648dec584d176074",
-      "observed_at": "2026-09-30T07:17:26Z"
+      "observed_at": "2026-10-01T07:40:57Z"
     },
     {
       "source_id": "remotive",
@@ -52,7 +52,7 @@
       "message": "已读取 16 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "86bc35e18fd62717253c",
-      "observed_at": "2026-09-30T07:17:26Z"
+      "observed_at": "2026-10-01T07:40:57Z"
     },
     {
       "source_id": "boss",
