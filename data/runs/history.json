@@ -1,6 +1,88 @@
 [
   {
     "schema_version": 1,
+    "started_at": "2026-10-08T07:56:59Z",
+    "finished_at": "2026-10-08T07:57:10Z",
+    "mode": "live",
+    "status": "partial",
+    "total_jobs": 776,
+    "sources": [
+      {
+        "source_id": "tencent",
+        "name": "腾讯招聘",
+        "adapter": "tencent",
+        "status": "partial",
+        "found": 200,
+        "accepted": 90,
+        "message": "已读取 200 条；无效 0 条；达到页数上限",
+        "coverage": "partial",
+        "config_fingerprint": "c7e92cb6471751d48adc",
+        "observed_at": "2026-10-08T07:56:59Z"
+      },
+      {
+        "source_id": "flexport",
+        "name": "Flexport 官网",
+        "adapter": "greenhouse",
+        "status": "ok",
+        "found": 196,
+        "accepted": 8,
+        "message": "已读取 196 条；无效 0 条",
+        "coverage": "partial",
+        "config_fingerprint": "e243e05c25bf93901356",
+        "observed_at": "2026-10-08T07:56:59Z"
+      },
+      {
+        "source_id": "xsolla",
+        "name": "Xsolla 官网",
+        "adapter": "lever",
+        "status": "partial",
+        "found": 184,
+        "accepted": 5,
+        "message": "已读取 186 条；无效 2 条",
+        "coverage": "partial",
+        "config_fingerprint": "c70b648dec584d176074",
+        "observed_at": "2026-10-08T07:56:59Z"
+      },
+      {
+        "source_id": "remotive",
+        "name": "Remotive",
+        "adapter": "remotive",
+        "status": "ok",
+        "found": 17,
+        "accepted": 5,
+        "message": "已读取 17 条；无效 0 条",
+        "coverage": "partial",
+        "config_fingerprint": "86bc35e18fd62717253c",
+        "observed_at": "2026-10-08T07:56:59Z"
+      },
+      {
+        "source_id": "boss",
+        "name": "BOSS 直聘",
+        "adapter": "codex",
+        "status": "stale",
+        "found": 0,
+        "accepted": 0,
+        "message": "最近的 Codex 批次已超过复核期限",
+        "coverage": "partial",
+        "config_fingerprint": "508d8c309fa39e87e99a",
+        "observed_at": "2026-09-12T01:13:44Z"
+      },
+      {
+        "source_id": "liepin",
+        "name": "猎聘",
+        "adapter": "codex",
+        "status": "stale",
+        "found": 0,
+        "accepted": 0,
+        "message": "最近的 Codex 批次已超过复核期限",
+        "coverage": "partial",
+        "config_fingerprint": "ef99e17579dfe51c1319",
+        "observed_at": "2026-09-12T01:13:24Z"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
     "started_at": "2026-10-07T07:40:54Z",
     "finished_at": "2026-10-07T07:41:09Z",
     "mode": "live",
@@ -2364,76 +2446,6 @@
         "message": "首轮原文核验：立邦 AI Agent 详情跳转验证码；另一岗位仅得到旧搜索快照，无法确认当前状态。未导入未经当前原文核验的岗位。",
         "coverage": "partial",
         "observed_at": "2026-09-11T02:50:29Z"
-      }
-    ]
-  },
-  {
-    "schema_version": 1,
-    "started_at": "2026-09-11T02:18:59Z",
-    "finished_at": "2026-09-11T02:18:59Z",
-    "mode": "demo",
-    "status": "demo",
-    "total_jobs": 12,
-    "sources": [
-      {
-        "source_id": "greenhouse",
-        "name": "Greenhouse",
-        "adapter": "greenhouse",
-        "status": "disabled",
-        "found": 0,
-        "accepted": 0,
-        "coverage": "partial",
-        "message": "未执行真实采集"
-      },
-      {
-        "source_id": "lever",
-        "name": "Lever",
-        "adapter": "lever",
-        "status": "disabled",
-        "found": 0,
-        "accepted": 0,
-        "coverage": "partial",
-        "message": "未执行真实采集"
-      },
-      {
-        "source_id": "remote-rss",
-        "name": "远程工作 RSS",
-        "adapter": "rss",
-        "status": "disabled",
-        "found": 0,
-        "accepted": 0,
-        "coverage": "partial",
-        "message": "未执行真实采集"
-      },
-      {
-        "source_id": "boss",
-        "name": "BOSS 直聘",
-        "adapter": "codex",
-        "status": "disabled",
-        "found": 0,
-        "accepted": 0,
-        "coverage": "partial",
-        "message": "未执行真实采集"
-      },
-      {
-        "source_id": "liepin",
-        "name": "猎聘",
-        "adapter": "codex",
-        "status": "disabled",
-        "found": 0,
-        "accepted": 0,
-        "coverage": "partial",
-        "message": "未执行真实采集"
-      },
-      {
-        "source_id": "company-careers",
-        "name": "企业招聘官网",
-        "adapter": "jsonld",
-        "status": "disabled",
-        "found": 0,
-        "accepted": 0,
-        "coverage": "partial",
-        "message": "未执行真实采集"
       }
     ]
   }
