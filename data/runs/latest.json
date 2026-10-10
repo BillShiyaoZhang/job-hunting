@@ -1,55 +1,55 @@
 {
   "schema_version": 1,
-  "started_at": "2026-10-09T07:57:19Z",
-  "finished_at": "2026-10-09T07:57:30Z",
+  "started_at": "2026-10-10T07:41:14Z",
+  "finished_at": "2026-10-10T07:41:25Z",
   "mode": "live",
   "status": "partial",
-  "total_jobs": 835,
+  "total_jobs": 858,
   "sources": [
     {
       "source_id": "tencent",
       "name": "腾讯招聘",
       "adapter": "tencent",
       "status": "partial",
-      "found": 200,
+      "found": 199,
       "accepted": 100,
-      "message": "已读取 200 条；无效 0 条；达到页数上限；达到结果上限",
+      "message": "已读取 199 条；无效 0 条；达到页数上限；达到结果上限",
       "coverage": "partial",
       "config_fingerprint": "c7e92cb6471751d48adc",
-      "observed_at": "2026-10-09T07:57:19Z"
+      "observed_at": "2026-10-10T07:41:14Z"
     },
     {
       "source_id": "flexport",
       "name": "Flexport 官网",
       "adapter": "greenhouse",
       "status": "ok",
-      "found": 197,
+      "found": 201,
       "accepted": 8,
-      "message": "已读取 197 条；无效 0 条",
+      "message": "已读取 201 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "e243e05c25bf93901356",
-      "observed_at": "2026-10-09T07:57:19Z"
+      "observed_at": "2026-10-10T07:41:14Z"
     },
     {
       "source_id": "xsolla",
       "name": "Xsolla 官网",
       "adapter": "lever",
       "status": "partial",
-      "found": 183,
+      "found": 187,
       "accepted": 5,
-      "message": "已读取 185 条；无效 2 条",
+      "message": "已读取 189 条；无效 2 条",
       "coverage": "partial",
       "config_fingerprint": "c70b648dec584d176074",
-      "observed_at": "2026-10-09T07:57:19Z"
+      "observed_at": "2026-10-10T07:41:14Z"
     },
     {
       "source_id": "remotive",
       "name": "Remotive",
       "adapter": "remotive",
-      "status": "ok",
+      "status": "cached",
       "found": 19,
       "accepted": 6,
-      "message": "已读取 19 条；无效 0 条",
+      "message": "沿用近期结果；最低抓取间隔 24 小时，保留原核验时间",
       "coverage": "partial",
       "config_fingerprint": "86bc35e18fd62717253c",
       "observed_at": "2026-10-09T07:57:19Z"
