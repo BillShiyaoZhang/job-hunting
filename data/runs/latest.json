@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "started_at": "2026-10-11T07:46:34Z",
-  "finished_at": "2026-10-11T07:46:47Z",
+  "started_at": "2026-10-12T07:55:31Z",
+  "finished_at": "2026-10-12T07:55:43Z",
   "mode": "live",
   "status": "partial",
-  "total_jobs": 862,
+  "total_jobs": 879,
   "sources": [
     {
       "source_id": "tencent",
       "name": "腾讯招聘",
       "adapter": "tencent",
       "status": "partial",
-      "found": 200,
-      "accepted": 100,
-      "message": "已读取 200 条；无效 0 条；达到页数上限；达到结果上限",
+      "found": 199,
+      "accepted": 90,
+      "message": "已读取 200 条；无效 1 条；达到页数上限",
       "coverage": "partial",
       "config_fingerprint": "c7e92cb6471751d48adc",
-      "observed_at": "2026-10-11T07:46:34Z"
+      "observed_at": "2026-10-12T07:55:31Z"
     },
     {
       "source_id": "flexport",
@@ -24,11 +24,11 @@
       "adapter": "greenhouse",
       "status": "ok",
       "found": 202,
-      "accepted": 8,
+      "accepted": 9,
       "message": "已读取 202 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "e243e05c25bf93901356",
-      "observed_at": "2026-10-11T07:46:34Z"
+      "observed_at": "2026-10-12T07:55:31Z"
     },
     {
       "source_id": "xsolla",
@@ -40,7 +40,7 @@
       "message": "已读取 189 条；无效 2 条",
       "coverage": "partial",
       "config_fingerprint": "c70b648dec584d176074",
-      "observed_at": "2026-10-11T07:46:34Z"
+      "observed_at": "2026-10-12T07:55:31Z"
     },
     {
       "source_id": "remotive",
@@ -52,7 +52,7 @@
       "message": "已读取 18 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "86bc35e18fd62717253c",
-      "observed_at": "2026-10-11T07:46:34Z"
+      "observed_at": "2026-10-12T07:55:31Z"
     },
     {
       "source_id": "boss",
