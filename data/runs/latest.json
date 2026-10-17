@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "started_at": "2026-10-16T06:17:40Z",
-  "finished_at": "2026-10-16T06:17:51Z",
+  "started_at": "2026-10-17T06:03:31Z",
+  "finished_at": "2026-10-17T06:03:42Z",
   "mode": "live",
   "status": "partial",
-  "total_jobs": 940,
+  "total_jobs": 959,
   "sources": [
     {
       "source_id": "tencent",
@@ -12,47 +12,47 @@
       "adapter": "tencent",
       "status": "partial",
       "found": 200,
-      "accepted": 85,
+      "accepted": 92,
       "message": "已读取 200 条；无效 0 条；达到页数上限",
       "coverage": "partial",
       "config_fingerprint": "c7e92cb6471751d48adc",
-      "observed_at": "2026-10-16T06:17:40Z"
+      "observed_at": "2026-10-17T06:03:31Z"
     },
     {
       "source_id": "flexport",
       "name": "Flexport 官网",
       "adapter": "greenhouse",
       "status": "ok",
-      "found": 209,
+      "found": 210,
       "accepted": 9,
-      "message": "已读取 209 条；无效 0 条",
+      "message": "已读取 210 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "e243e05c25bf93901356",
-      "observed_at": "2026-10-16T06:17:40Z"
+      "observed_at": "2026-10-17T06:03:31Z"
     },
     {
       "source_id": "xsolla",
       "name": "Xsolla 官网",
       "adapter": "lever",
       "status": "partial",
-      "found": 188,
+      "found": 190,
       "accepted": 5,
-      "message": "已读取 190 条；无效 2 条",
+      "message": "已读取 192 条；无效 2 条",
       "coverage": "partial",
       "config_fingerprint": "c70b648dec584d176074",
-      "observed_at": "2026-10-16T06:17:40Z"
+      "observed_at": "2026-10-17T06:03:31Z"
     },
     {
       "source_id": "remotive",
       "name": "Remotive",
       "adapter": "remotive",
-      "status": "cached",
+      "status": "ok",
       "found": 15,
       "accepted": 6,
-      "message": "沿用近期结果；最低抓取间隔 24 小时，保留原核验时间",
+      "message": "已读取 15 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "86bc35e18fd62717253c",
-      "observed_at": "2026-10-15T06:20:39Z"
+      "observed_at": "2026-10-17T06:03:31Z"
     },
     {
       "source_id": "boss",
