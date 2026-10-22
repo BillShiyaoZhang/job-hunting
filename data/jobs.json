@@ -1,8 +1,587 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T06:29:22Z",
+  "generated_at": "2026-10-22T06:31:57Z",
   "demo": false,
   "jobs": [
+    {
+      "id": "fecea2713a4e88ff337f",
+      "title": "Technology Platform-技术美术（角色渲染）",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2110224927717240832",
+      "description": "1.深度参与QQ飞车，怪物猎人等游戏产品及UE5新作的研发； 2.开发材质和工具，以满足项目对角色、生物等资产的渲染品质提升和特殊表现需求； 3.根据项目美术风格，搭建可复用的角色材质方案； 4.角色光照与渲染方案制定； 5.配合引擎程序、美术团队，推进角色相关的资产规范化和性能优化。",
+      "tags": [
+        "设计",
+        "IEG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2110224927717240832"
+    },
+    {
+      "id": "f9b20908046b0508ffdf",
+      "title": "云原生高级SRE工程师（深圳/北京）",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2113089267273216000",
+      "description": "1.保障云原生平台可靠性：负责 TKE 相关集群及核心组件的稳定性建设，完善 SLI/SLO、可观测性、容量评估与风险巡检体系，持续降低故障发生率与恢复时长； 2.攻坚复杂生产问题：深入 Kubernetes 控制面、调度、容器运行时、网络、存储等关键链路，开展疑难问题定位、源码分析与性能优化，推动问题从应急恢复到根因修复闭环； 3.推进容灾与变更治理：建设可用区级故障防护、备份恢复、容灾演练和安全变更能力，完善灰度、回滚、限流与熔断机制，降低故障影响范围； 4.研发自动化运维能力：设计并开发集群生命周期管理、巡检、自愈、变更与诊断工具，推动运维流程标准化、平台化，减少重复性人工操作； 5.探索 AI 辅助运维：结合告警、工单、日志与知识库建设辅助诊断能力，推动 Agent 在信息检索、分析与处置建议中的应用，并建立效果评估、权限控制和人工确认机制； 6.推动跨团队问题闭环：协同研发、产品及技术支持团队，参与轮值、故障响应与复盘，将客户问题和共性故障转化为产品改进、治理专项及可复用知识。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2113089267273216000"
+    },
+    {
+      "id": "eae4edcc12f77568d97e",
+      "title": "PUBG Mobile-游戏后台开发工程师-新星引力计划",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2112458159451979776",
+      "description": "1.负责PUBG Mobile游戏服务器后台的功能设计和开发工作，保障版本平稳上线； 2.持续优化服务器性能，提升系统稳定性和处理效率，降低运营成本； 3.及时响应并解决外网环境中的各类技术问题，保障游戏服务的稳定性与流畅性； 4.持续追踪前沿技术发展趋势，深度挖掘用户需求，将前沿技术应用到游戏后台开发中，包括但不限于运用机器学习、数据挖掘等技术手段分析，算法工程化落地等。",
+      "tags": [
+        "技术",
+        "IEG",
+        "两年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2112458159451979776"
+    },
+    {
+      "id": "e7a7f21fe0886e49cdd4",
+      "title": "Agent Infra SRE工程师(Agent治理方向)(深圳/北京)",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2113089269949186048",
+      "description": "1.负责 AgentRuntime 全地域（国内 + 海外）的服务可用性保障，承担日常值班、告警响应、故障定位与复盘，推动故障根因治理与长期改善； 2.建设和完善可观测体系：基于 OpenTelemetry / Prometheus / CLS / 智研平台，覆盖沙箱创建、调度、网络、存储等全链路的 Metrics、Tracing、Logging，驱动 SLO/SLI 指标落地； 3.参与容量管理与资源运营：监控多地域沙箱资源池（CPU/内存/存储）水位，推动弹性扩缩容策略优化，降低资源浪费，保障高峰期服务质量； 4.主导变更管控与发布稳定性：建立灰度发布、回滚、预案机制，结合 CI/CD 流水线推进发布过程风险管控； 5.参与平台可靠性设计：针对 CDB 慢查询、沙箱启动延迟、网络隔离策略等关键瓶颈，联合研发推进架构优化和稳定性加固； 6.负责 SRE 工具链与效能建设：开发故障自愈脚本、巡检工具、容量预测模型，沉淀 SRE 知识库，持续降低人工运维成本。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2113089269949186048"
+    },
+    {
+      "id": "db093197cd05d3991077",
+      "title": "微信视频号-投放算法工程师",
+      "company": "腾讯",
+      "location": "中国 · 北京",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2087371544719441920",
+      "description": "1.负责微信视频号投放算法的研发； 2.包含商业化或生态投放目标的召回和精排算法、预算控制算法、出价机制的优化迭代； 3.结合微信视频号的业务的实际特点，快速进行算法和策略迭代，不断提升投放效率。",
+      "tags": [
+        "技术",
+        "WXG",
+        "不限"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2087371544719441920"
+    },
+    {
+      "id": "d41eba028d139f959ab8",
+      "title": "CPU架构与性能优化架构师",
+      "company": "腾讯",
+      "location": "中国 · 上海",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2113112646369853440",
+      "description": "1.工作负载分析与性能建模；深入分析Agent编排、工具调用、代码执行、沙箱、RL环境及推理主机等场景的关键路径与资源需求；建立CPU、缓存、内存、网络和存储的资源画像，识别计算、访存、调度、虚拟化及I/O瓶颈；将业务SLO、任务吞吐和并发需求转化为可量化的硬件与系统设计要求； 2.CPU及服务器平台架构设计；评估不同CPU架构、代际和平台的适用性，制定场景化选型及配置方案；分析单线程性能、多核扩展性、SMT、缓存、NUMA、内存容量与带宽、PCIe及网络拓扑对业务的影响；参与CPU执行资源池与加速器主机的配置规划，支持平台演进及容量建设决策； 3.跨层性能定位与优化：利用性能计数器、系统跟踪和实验对照，定位CPU微架构、内核、虚拟化及应用运行时相关问题；推进绑核、内存放置、线程模型、调度、缺页处理、数据搬运及相关配置优化；与BIOS、内核、虚拟化和业务团队协作，将优化成果落地到实际环境并完成回归验证； 4.Benchmark与自动化评测体系建设：建立覆盖微基准、组件测试及端到端任务的评测体系，形成可复现、可比较的性能基线；建设跨平台、跨版本的自动化测试及回归能力，分析性能波动与退化原因；同时评估吞吐、P95/P99延迟、任务成功率、资源占用和能效，避免以单一跑分替代业务效果； 5.容量、能效与成本优化：建立满足质量、隔离和延迟要求的单机容量模型，评估并发密度与资源池配比；分析单位有效任务成本、CPU资源消耗、内存占用和功耗，支持扩容、采购及配置优化；通过试点或生产数据验证收益，明确适用边界、上线风险及回退方案； 6.技术路线与跨团队协同；跟踪CPU、内存、互连及硬件加速技术，将实际瓶颈转化为下一代平台需求；与芯片厂商、服务器厂商及内部研发团队开展联合分析和方案验证；沉淀架构规范、性能方法和最佳实践，提升团队的问题定位与工程交付能力。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "五年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2113112646369853440"
+    },
+    {
+      "id": "d30275e033b4dd37a823",
+      "title": "腾讯AI网盘全栈开发高级工程师",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2112898585224982528",
+      "description": "1.负责腾讯AI网盘核心产品 Web 端及桌面客户端（Windows / Mac）的研发与迭代，包括文件管理、分享协作、搜索预览等核心功能，保障多端功能一致性与极致用户体验； 2.借助 AI 辅助编程工具，独立完成从前端交互、客户端到 BFF / 后台接口的全栈功能落地，持续提升研发效率； 3.参与网盘权限管理与资产管理相关功能的研发，涵盖组织架构、成员与角色权限、文件/目录访问控制、分享权限、空间配额等场景； 4.负责 Web 端及客户端的性能优化，攻克海量文件列表渲染、大文件上传下载、多端数据与状态同步等难题； 5.参与产品智能化能力建设，配合推进 MCP、开放 API 等能力的接入，支持文件检索、内容总结等 AI 场景在多端的落地。",
+      "tags": [
+        "CSIG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2112898585224982528"
+    },
+    {
+      "id": "c61711958348d86bc444",
+      "title": "微信支付-大模型安全工程师",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2110266351993143296",
+      "description": "1.负责微信支付业务的大模型安全相关的研发和安全攻防工作，保护支付安全； 2.负责研究大模型及智能体的安全风险，针对提示词注入、数据投毒、AI作业风险等攻击手法开展分析与防御方案设计，推动研究成果在实际场景中落地； 3.负责针对大模型安全风险的内网数据安全体系的落地，包括权限管控、安全隔离、供应链安全等； 4.参与自动化红队评测体系的建设，开发安全评估工具与测试用例，对大模型应用的安全能力和内网安全防护能力进行持续评估与回归测试。",
+      "tags": [
+        "技术",
+        "WXG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2110266351993143296"
+    },
+    {
+      "id": "a26c7f37b57e9840db10",
+      "title": "AI Infra SRE 工程师(大模型推理)(深圳/北京)",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2113089272218300416",
+      "description": "1.负责大模型在线推理服务（含评测、潮汐调度等业务形态）的全链路稳定性保障：日常值班、告警响应、故障定位与复盘，推动根因治理与长期改善； 2.负责推理服务性能与容量运营：KV Cache 调优、吞吐与时延优化、GPU 资源池水位监控与弹性调度，参与成本 / 资源优化专项； 3.建设面向推理场景的可观测体系：TTFT / TPOT、缓存命中率、GPU 利用率、排队时延等 SLI/SLO 指标落地，结合 Tracing / Logging 定位长尾问题； 4.参与推理集群（Kubernetes）日常运维：多机多卡部署与调度策略、Pod 异常与故障节点隔离、灰度发布与回滚预案； 5.沉淀 SRE 工具链与效能建设：巡检工具、故障自愈脚本、容量与成本预测模型，持续降低人工运维成本。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2113089272218300416"
+    },
+    {
+      "id": "91f2462b43c7a614ad8b",
+      "title": "Technology Platform-技术美术（动画）",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2110224929982169088",
+      "description": "1.深度参与QQ飞车，怪物猎人等游戏产品及UE5新作的研发； 2.高品质面部表情方案：负责写实向角色面部表情系统的技术设计与落地，包括面部 Rig/Blendshape 方案、表情驱动逻辑、表情捕捉数据接入与处理、引擎内实时表情效果调优； 3.角色物理表现方案溶地：负责角色物理（布料、飘带、披风、装备挂件、次级运动等）在UE5 中的方案选型、参数调优与工程化落地，平衡表现质量与性能开销，推动方案在项目内规模化应用； 4.表情与动画管线建设：参与动捕/表情捕捉全流程（采集规范一数据清理一重定向 Retarget 一引擎内验证），建立稳定可控的生产管线； 5.UE 动画系统方案：参与 UE5 动画系统设计与优化，包括 Motion Matching、动画状态机、IK Rig/IK Retargeter； 6.Control； 7.Rig、Anim Dynamics 等模块的落地与调优； 8.技术攻坚：与动画、角色美术、引擎程序协作，解决动画生产中的技术难题—穿模抗穿插、姿态对齐、IK/FK 切换、重定向变形、物理穿模等； 9.工具开发：开发动画/表情/物理相关工具与脚本（Python 为主，UE 内 Blueprint/C++辅助），提升美术生产效率，沉淀可复用工具链； 10.规范与质量：制定表情、物理、动画资产的制作规范与自动化检查流程，保障资产质量与管线稳定。",
+      "tags": [
+        "设计",
+        "IEG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2110224929982169088"
+    },
+    {
+      "id": "7b9e454f24ac64c679d5",
+      "title": "腾讯云大数据-Data+AI高级产品架构师",
+      "company": "腾讯",
+      "location": "中国 · 北京",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2112801344187445248",
+      "description": "1.负责腾讯云大数据Data+AI场景化赛道的商业化落地，如智驾、具身智能、LLM等赛道； 2.能够深入理解客户在Data+AI场景下对于产品和方案的需求和痛点，针对客户业务场景和产品技术需求，设计整体Data+AI解决方案； 3.能够向客户推荐腾讯云Data+AI产品和方案的核心优势和能力，攻坚和转化客户，沉淀Data+AI场景化解决方案； 4.深入了解客户针对Data+AI产品技术问题和需求，作为大数据产品团队的桥梁，能与行业、产研、售中、售后团队协作，高效解决客户问题； 5.提炼客户对于Data+AI产品核心关键需求，推动产品能力不断优化提升。",
+      "tags": [
+        "产品",
+        "CSIG",
+        "五年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2112801344187445248"
+    },
+    {
+      "id": "6e811489be5f6200fddd",
+      "title": "AI Infra SRE 工程师(Agent沙箱)",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2113089274038628352",
+      "description": "1.数据面：负责宿主机集群运维：内核、虚拟化栈、轻量虚拟机、容器运行时、版本管理与变更管控、大规模故障处理、机型适配；参与定位宿主机与实例侧疑难问题：虚拟化异常、内核 panic、性能抖动、IO 与网络异常； 2.控制面：负责平台 SLA/SLO 达成：定义并运营可用性、创建成功率、冷启动时延等核心指标，保障调度与控制面组件的可用性、容量规划与性能优化； 3.负责事件/变更/问题管理全流程：故障响应与升级、影响面评估与对外通报、复盘闭环与改进项跟踪； 4.建设全链路可观测体系（指标、日志、拨测、事件），推进运维自动化，沉淀原子工具与标准化 SOP，实现巡检、变更、故障处置等场景的平台化； 5.探索并落地 LLM、AI Agent 技术，结合运维知识库、监控数据与工具调用，建设智能告警分析、故障诊断与自动化处置能力； 6.负责容量与成本优化，联动研发团队推动故障复盘与容灾风险治理，以数据驱动稳定性改进。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2113089274038628352"
+    },
+    {
+      "id": "58ffd780d768c4e87bb9",
+      "title": "腾讯云大数据-Data+AI高级产品架构师",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2112801342136434688",
+      "description": "1.负责腾讯云大数据Data+AI场景化赛道的商业化落地，如智驾、具身智能、LLM等赛道； 2.能够深入理解客户在Data+AI场景下对于产品和方案的需求和痛点，针对客户业务场景和产品技术需求，设计整体Data+AI解决方案； 3.能够向客户推荐腾讯云Data+AI产品和方案的核心优势和能力，攻坚和转化客户，沉淀Data+AI场景化解决方案； 4.深入了解客户针对Data+AI产品技术问题和需求，作为大数据产品团队的桥梁，能与行业、产研、售中、售后团队协作，高效解决客户问题； 5.提炼客户对于Data+AI产品核心关键需求，推动产品能力不断优化提升。",
+      "tags": [
+        "产品",
+        "CSIG",
+        "五年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2112801342136434688"
+    },
+    {
+      "id": "4b492356ee56a0aa6b60",
+      "title": "微信支付-客户端安全研发工程师",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2094969689762611200",
+      "description": "1.负责微信客户端上支付业务的安全研发和安全攻防工作，保护支付安全； 2.负责客户端IOS/android/鸿蒙的安全防护体系的设计和规划，保护微信支付不被木马/外挂侵害； 3.能够根据木马/外挂原理，定制化IOS、Android、鸿蒙等多平台的检测以及应用的保护能力。",
+      "tags": [
+        "技术",
+        "WXG",
+        "两年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2094969689762611200"
+    },
+    {
+      "id": "4abe145a036e0f2590c3",
+      "title": "大数据平台部-高级AI产品经理",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2110569968142827520",
+      "description": "1.深入用户和业务场景，识别 AI 产品机会，明确目标用户、核心需求和商业价值； 2.主导 AI 产品从 0 到 1 的探索，通过原型、MVP 和用户测试验证产品方向，制定产品路线图； 3.负责 AI 助手、Agent、知识检索及智能工作流等产品设计，提升任务完成效率和用户体验； 4.与算法、研发、设计及业务团队协作，完成需求定义、方案设计、开发上线和持续迭代； 5.建立产品效果评估体系，围绕输出质量、任务完成率、用户采纳率、成本和响应速度优化产品； 6.探索产品定位、定价及商业化路径，推动产品落地和规模化应用。",
+      "tags": [
+        "产品",
+        "PCG",
+        "五年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2110569968142827520"
+    },
+    {
+      "id": "46a33f625e2ea35e0930",
+      "title": "公益数据工程师",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2110256329754062848",
+      "description": "1.负责SSV相关产品数据工程工作，包含数据基建搭建、数据链路优化、数据工具平台建设与维护，支撑业务数据常态化产出； 2.搭建并完善产品数据体系与数据Pipeline，负责数据采集、加工、调度与质量治理，持续优化数据稳定性、准确性与产出效率； 3.定位数据链路及业务侧核心问题，支撑产品迭代、运营复盘及AB实验落地，为产品策略与业务优化提供稳定的数据底座支撑； 4.协助标准化数据口径、沉淀数据资产，利用AI工具辅助提升数据开发效率，落地自动化数据流程建设。",
+      "tags": [
+        "技术",
+        "CDG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2110256329754062848"
+    },
+    {
+      "id": "37ef226f68deae18d1a1",
+      "title": "微信小游戏-AI应用开发-游戏AI审核方向",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2108741444050268160",
+      "description": "1.负责小游戏多模态内容审核能力建设，实现对红线、侵权等违规内容的自动化精准识别； 2.负责小游戏审核系统优化，在保障质量的前提下提升机审覆盖率，降低人工成本； 3.探索大模型（LLM/VLM）、RAG、Agent 等前沿技术在安全审核场景的落地应用。",
+      "tags": [
+        "技术",
+        "WXG",
+        "一年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2108741444050268160"
+    },
+    {
+      "id": "3708ac2e637998a7315b",
+      "title": "微信小游戏-反外挂工程师",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2102620761465466880",
+      "description": "1.负责微信小游戏反外挂能力开发与运营，包括外挂样本捕获、分析、风险识别、对抗策略制定与处置闭环，保障游戏生态公平健康； 2.建设iOS/Android/鸿蒙/PC等平台级反外挂底座能力，根据外挂原理定制化多平台的检测与防护方案； 3.建设小游戏运行时反外挂特征平台（特征分析/特征制作/特征管理），理解并感知作弊游戏数据、事件、状态，不断优化效率。",
+      "tags": [
+        "技术",
+        "WXG",
+        "两年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-20T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2102620761465466880"
+    },
+    {
+      "id": "27a0cef3b1c03a4340ba",
+      "title": "零信任产品客户端研发专家（北京）",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2112199650017718272",
+      "description": "1.负责零信任产品终端侧核心能力的架构设计与研发，主导跨平台（Windows / macOS / Linux / 信创）统一 Agent 架构的设计与演进，抽象出一致的数据采集与管控底座； 2.操作系统底层攻坚：承担关键底层技术的设计与实现，并保障各平台能力对齐与降级策略； 3.技术牵引与能力建设：作为技术专家牵引团队技术演进——技术选型、架构评审、Code Review、关键难题攻坚、技术标准沉淀与人才培养，承担跨端与跨团队的技术对齐； 4.端云协同落地：与产品、安全策略、后端团队协同，将持续信任评估、终端风险感知、策略下发与响应处置等能力在终端侧高效、可靠地落地。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "八年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2112199650017718272"
+    },
+    {
+      "id": "229b27aae9c29f24c4fa",
+      "title": "CPU架构与性能优化架构师",
+      "company": "腾讯",
+      "location": "中国 · 深圳",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2113112644033626112",
+      "description": "1.工作负载分析与性能建模；深入分析Agent编排、工具调用、代码执行、沙箱、RL环境及推理主机等场景的关键路径与资源需求；建立CPU、缓存、内存、网络和存储的资源画像，识别计算、访存、调度、虚拟化及I/O瓶颈；将业务SLO、任务吞吐和并发需求转化为可量化的硬件与系统设计要求； 2.CPU及服务器平台架构设计；评估不同CPU架构、代际和平台的适用性，制定场景化选型及配置方案；分析单线程性能、多核扩展性、SMT、缓存、NUMA、内存容量与带宽、PCIe及网络拓扑对业务的影响；参与CPU执行资源池与加速器主机的配置规划，支持平台演进及容量建设决策； 3.跨层性能定位与优化：利用性能计数器、系统跟踪和实验对照，定位CPU微架构、内核、虚拟化及应用运行时相关问题；推进绑核、内存放置、线程模型、调度、缺页处理、数据搬运及相关配置优化；与BIOS、内核、虚拟化和业务团队协作，将优化成果落地到实际环境并完成回归验证； 4.Benchmark与自动化评测体系建设：建立覆盖微基准、组件测试及端到端任务的评测体系，形成可复现、可比较的性能基线；建设跨平台、跨版本的自动化测试及回归能力，分析性能波动与退化原因；同时评估吞吐、P95/P99延迟、任务成功率、资源占用和能效，避免以单一跑分替代业务效果； 5.容量、能效与成本优化：建立满足质量、隔离和延迟要求的单机容量模型，评估并发密度与资源池配比；分析单位有效任务成本、CPU资源消耗、内存占用和功耗，支持扩容、采购及配置优化；通过试点或生产数据验证收益，明确适用边界、上线风险及回退方案； 6.技术路线与跨团队协同；跟踪CPU、内存、互连及硬件加速技术，将实际瓶颈转化为下一代平台需求；与芯片厂商、服务器厂商及内部研发团队开展联合分析和方案验证；沉淀架构规范、性能方法和最佳实践，提升团队的问题定位与工程交付能力。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "五年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-10-21T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-10-22T06:31:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2113112644033626112"
+    },
     {
       "id": "d9899c2b62c113b02154",
       "title": "《火影忍者》手游-客户端开发-系统开发方向",
@@ -22,7 +601,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -51,7 +630,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -80,7 +659,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -109,7 +688,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -138,7 +717,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -167,7 +746,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -196,7 +775,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -225,7 +804,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -254,7 +833,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -283,7 +862,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -312,7 +891,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -341,7 +920,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -370,7 +949,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -399,7 +978,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -428,7 +1007,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -457,7 +1036,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -486,7 +1065,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -515,7 +1094,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -544,7 +1123,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1772,7 +2351,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "remotive",
       "source_name": "Remotive",
       "source_ids": [
@@ -2000,10 +2579,10 @@
         "五年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-15T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-17T06:03:31Z",
-      "last_seen_at": "2026-10-19T06:42:39Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -2781,10 +3360,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-19T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-15T06:20:39Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -3245,10 +3824,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-12T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-14T06:38:30Z",
-      "last_seen_at": "2026-10-15T06:20:39Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -3944,7 +4523,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-13T08:20:56Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -4232,7 +4811,7 @@
       "updated_at": "2026-10-20T08:02:56Z",
       "expires_at": null,
       "first_seen_at": "2026-10-12T07:55:31Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -4751,10 +5330,10 @@
         "五年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-08T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-10T07:41:14Z",
-      "last_seen_at": "2026-10-11T07:46:34Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -5043,7 +5622,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-10T07:41:14Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -5942,7 +6521,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-09T07:57:19Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -7765,7 +8344,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-08T07:56:59Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -8081,10 +8660,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-07T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-08T07:56:59Z",
-      "last_seen_at": "2026-10-08T07:56:59Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -8238,7 +8817,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "remotive",
       "source_name": "Remotive",
       "source_ids": [
@@ -8312,7 +8891,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-10-05T07:37:47Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "remotive",
       "source_name": "Remotive",
       "source_ids": [
@@ -8724,7 +9303,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330933721284608"
     },
@@ -8782,7 +9361,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072521208993333248"
     },
@@ -8811,7 +9390,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2082422563040051200"
     },
@@ -8840,7 +9419,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330931636715520"
     },
@@ -8869,7 +9448,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2089180654645460992"
     },
@@ -8927,7 +9506,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2036976620622999552"
     },
@@ -8956,7 +9535,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2085651311889657856"
     },
@@ -8985,7 +9564,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2070679023687745536"
     },
@@ -9072,7 +9651,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2069979258599686144"
     },
@@ -9101,7 +9680,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330940650270720"
     },
@@ -9130,7 +9709,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330938095943680"
     },
@@ -9159,7 +9738,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1990986247778230272"
     },
@@ -9217,7 +9796,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2058806035631751168"
     },
@@ -9246,7 +9825,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1998589513475186688"
     },
@@ -9304,7 +9883,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330929078190080"
     },
@@ -9333,7 +9912,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1923261618968457216"
     },
@@ -9382,10 +9961,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-29T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-30T07:17:26Z",
-      "last_seen_at": "2026-10-07T07:40:54Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -9420,7 +9999,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330945872183296"
     },
@@ -9478,7 +10057,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330936011374592"
     },
@@ -9507,7 +10086,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330924615446528"
     },
@@ -9593,7 +10172,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2027658888916140032"
     },
@@ -9622,7 +10201,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2061501352823144448"
     },
@@ -9651,7 +10230,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2001341503481466880"
     },
@@ -9680,7 +10259,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072330926830039040"
     },
@@ -9709,7 +10288,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072321535468810240"
     },
@@ -9738,7 +10317,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1901550594292789248"
     },
@@ -10143,7 +10722,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2082081195197382656"
     },
@@ -10172,7 +10751,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1998671162179215360"
     },
@@ -10201,7 +10780,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1993867523589824512"
     },
@@ -10259,7 +10838,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2102218203940958208"
     },
@@ -10403,7 +10982,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2071610936929730560"
     },
@@ -10490,7 +11069,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2062455033651445760"
     },
@@ -10577,7 +11156,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2005542856462323712"
     },
@@ -10606,7 +11185,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2071939943151874048"
     },
@@ -10693,7 +11272,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2059492312714756096"
     },
@@ -11554,7 +12133,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-28T07:30:41Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -11879,7 +12458,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1958568465963044864"
     },
@@ -11908,7 +12487,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1958073219999223808"
     },
@@ -12395,7 +12974,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-24T06:39:55Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -13151,7 +13730,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2036976622594322432"
     },
@@ -13577,16 +14156,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-21T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-22T06:43:35Z",
-      "last_seen_at": "2026-09-23T06:34:41Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2079258728280010752"
     },
@@ -13693,10 +14272,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-08T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-22T06:43:35Z",
-      "last_seen_at": "2026-10-10T07:41:14Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -13838,16 +14417,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-20T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-22T06:43:35Z",
-      "last_seen_at": "2026-09-23T06:34:41Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2033448339554598912"
     },
@@ -13957,7 +14536,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14015,7 +14594,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14078,7 +14657,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2011054761029296128"
     },
@@ -14362,7 +14941,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14476,7 +15055,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -14563,7 +15142,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14592,7 +15171,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14621,7 +15200,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14650,7 +15229,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14676,16 +15255,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-19T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-09-22T06:43:35Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2009274767156334592"
     },
@@ -14882,7 +15461,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14911,7 +15490,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14940,7 +15519,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14998,7 +15577,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -15172,7 +15751,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -15285,16 +15864,16 @@
         "一年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-19T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-09-22T06:43:35Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2014159284463624192"
     },
@@ -15375,7 +15954,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -15404,7 +15983,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -15458,16 +16037,16 @@
         "一年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-19T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-09-22T06:43:35Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2035012525405401088"
     },
@@ -15866,7 +16445,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-20T06:51:35Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -16008,16 +16587,16 @@
         "不限"
       ],
       "published_at": null,
-      "updated_at": "2026-09-19T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-20T06:51:35Z",
-      "last_seen_at": "2026-09-20T06:51:35Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2067084416139833344"
     },
@@ -16124,16 +16703,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-19T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-20T06:51:35Z",
-      "last_seen_at": "2026-09-21T06:59:02Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2011617155061276672"
     },
@@ -16153,16 +16732,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-19T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-20T06:51:35Z",
-      "last_seen_at": "2026-09-21T06:59:02Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2044972215568592896"
     },
@@ -16301,7 +16880,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-20T06:51:35Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -16858,7 +17437,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2013876954679369728"
     },
@@ -16945,7 +17524,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2071420429905608704"
     },
@@ -17147,7 +17726,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2004181418607005696"
     },
@@ -17234,7 +17813,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2013876952615768064"
     },
@@ -17321,7 +17900,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1991009056084615168"
     },
@@ -17408,7 +17987,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1993913287074537472"
     },
@@ -17437,7 +18016,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1993913290757132288"
     },
@@ -17547,7 +18126,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-19T06:29:39Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -18140,16 +18719,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-21T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-18T06:31:47Z",
-      "last_seen_at": "2026-09-24T06:39:55Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2080186557356224512"
     },
@@ -18730,16 +19309,16 @@
         "两年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-16T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-17T06:35:42Z",
-      "last_seen_at": "2026-09-19T06:29:39Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2056017578089955328"
     },
@@ -19049,10 +19628,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-15T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-17T06:35:42Z",
-      "last_seen_at": "2026-10-19T06:42:39Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -19281,16 +19860,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-16T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-17T06:35:42Z",
-      "last_seen_at": "2026-09-19T06:29:39Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2056017577251090432"
     },
@@ -19464,7 +20043,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2033809378322317312"
     },
@@ -19759,7 +20338,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-16T06:37:33Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -19881,7 +20460,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2006202335759585280"
     },
@@ -20336,7 +20915,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-16T06:37:33Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -20420,16 +20999,16 @@
         "不限"
       ],
       "published_at": null,
-      "updated_at": "2026-09-14T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-16T06:37:33Z",
-      "last_seen_at": "2026-09-17T06:35:42Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2064981110395420672"
     },
@@ -21461,7 +22040,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-15T06:36:56Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -21525,7 +22104,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2072248701686034432"
     },
@@ -22906,7 +23485,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-15T06:36:56Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -22932,16 +23511,16 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-09-22T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-15T06:36:56Z",
-      "last_seen_at": "2026-09-27T07:01:57Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2067452809405706240"
     },
@@ -23404,7 +23983,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=1989222812384124928"
     },
@@ -23485,7 +24064,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-15T06:36:56Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -23743,16 +24322,16 @@
         "不限"
       ],
       "published_at": null,
-      "updated_at": "2026-09-20T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-14T06:55:18Z",
-      "last_seen_at": "2026-09-23T06:34:41Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
         "tencent"
       ],
-      "status": "stale",
+      "status": "active",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2069315805996302336"
     },
@@ -24181,7 +24760,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-14T06:55:18Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -24236,10 +24815,10 @@
         "一年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-13T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-14T06:55:18Z",
-      "last_seen_at": "2026-10-16T06:17:40Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -24535,7 +25114,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2064244091922853888"
     },
@@ -24935,7 +25514,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-14T06:55:18Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -25887,10 +26466,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-11T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-12T01:14:42Z",
-      "last_seen_at": "2026-10-14T06:38:30Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -26150,7 +26729,7 @@
       "updated_at": "2026-10-19T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-12T01:14:42Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -26468,7 +27047,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -26524,7 +27103,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -26579,10 +27158,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-10T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-12T07:55:31Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -26637,10 +27216,10 @@
         "两年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-08T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-11T07:46:34Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -27023,7 +27602,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2049051892805435392"
     },
@@ -27247,7 +27826,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -27418,10 +27997,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-11T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-13T08:20:56Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -27652,7 +28231,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -27680,7 +28259,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -27880,10 +28459,10 @@
         "五年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-11T16:00:00Z",
+      "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-13T08:20:56Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -27997,7 +28576,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -28025,7 +28604,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -28263,7 +28842,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2038814818466689024"
     },
@@ -28466,7 +29045,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2065201527924113408"
     },
@@ -28748,7 +29327,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -29071,7 +29650,7 @@
       "source_ids": [
         "flexport"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://job-boards.greenhouse.io/flexport/jobs/7994960"
     },
@@ -29092,7 +29671,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -29156,7 +29735,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2094785303813472256"
     },
@@ -29236,7 +29815,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -29358,7 +29937,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2049051895145857024"
     },
@@ -29408,7 +29987,7 @@
       "updated_at": "2026-10-13T16:36:37Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -29472,7 +30051,7 @@
       "source_ids": [
         "tencent"
       ],
-      "status": "active",
+      "status": "stale",
       "demo": false,
       "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2038553631502004224"
     },
@@ -29521,10 +30100,10 @@
         "五年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-13T16:00:00Z",
+      "updated_at": "2026-10-21T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-15T06:20:39Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -29582,7 +30161,7 @@
       "updated_at": "2026-10-20T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-10-21T06:29:22Z",
+      "last_seen_at": "2026-10-22T06:31:57Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
