@@ -1,8 +1,66 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-06T08:27:14Z",
+  "generated_at": "2026-11-07T07:42:28Z",
   "demo": false,
   "jobs": [
+    {
+      "id": "e0957d19e66743c99784",
+      "title": "腾讯云安全-网络安全产品运营经理",
+      "company": "腾讯",
+      "location": "中国 · 北京",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2118631456241795072",
+      "description": "1. 负责产品 GTM（Go-to-Market）落地执行，推进新功能/新版本上市； 2. 产品差异化优势场景挖掘，并推进重点行业和场景客户方案及标杆落地； 3. 深度参与产品定价策略制定，包括产品规格、价格及用户分析等； 4. 运营用户增长与留存，建立用户分层运营体系，驱动活跃用户、付费转化及续费率提升； 5. 与售前/售后/产品合作，参与重点客户 POC 评估与产品解决方案输出，并为商业化结果负责。",
+      "tags": [
+        "产品",
+        "CSIG",
+        "五年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-11-05T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-11-07T07:42:28Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2118631456241795072"
+    },
+    {
+      "id": "ab96ee10f42e66ad1007",
+      "title": "AI Infra存储架构师-成都/上海",
+      "company": "腾讯",
+      "location": "中国 · 成都",
+      "workplace": "unknown",
+      "employment_type": "",
+      "salary": "",
+      "url": "https://careers.tencent.com/jobdesc.html?postId=2113523907171631104",
+      "description": "1.负责推理系统分级存储架构建设：设计并实现 KVCache 在 HBM / DRAM / SSD / 分布式持久化存储各层级间的放置、流动与淘汰策略，平衡命中率、延迟与成本； 2.负责类 分布式持久化存储系统设计与研发，支撑 KVCache 卸载回灌、模型权重与 Checkpoint 读写等场景，做到高吞吐、低长尾延迟、可水平扩展； 3.负责分布式 KVCache 池化存储的元数据高可用能力建设，保障可用性 SLO； 4.优化端到端 I/O 路径，结合 RDMA、NVMe SSD、GPUDirect、零拷贝等技术降低 H2D/D2H 传输开销，并与 vLLM / SGLang 等推理框架协同落地 KVCache offload 与预取； 5.保障线上数据可靠性与稳定性，跟进存算分离等前沿方向。",
+      "tags": [
+        "技术",
+        "CSIG",
+        "三年以上工作经验"
+      ],
+      "published_at": null,
+      "updated_at": "2026-11-05T16:00:00Z",
+      "expires_at": null,
+      "first_seen_at": "2026-11-07T07:42:28Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
+      "source_id": "tencent",
+      "source_name": "腾讯招聘",
+      "source_ids": [
+        "tencent"
+      ],
+      "status": "active",
+      "demo": false,
+      "evidence_url": "https://careers.tencent.com/jobdesc.html?postId=2113523907171631104"
+    },
     {
       "id": "f2feb5166e01032ab813",
       "title": "腾讯云-边缘安全加速测试工程师（测试agent开发方向）",
@@ -22,7 +80,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -51,7 +109,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -80,7 +138,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -109,7 +167,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -138,7 +196,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -167,7 +225,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -196,7 +254,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -225,7 +283,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -254,7 +312,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -283,7 +341,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -312,7 +370,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -341,7 +399,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -370,7 +428,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-06T08:27:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -399,7 +457,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -428,7 +486,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -457,7 +515,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -486,7 +544,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -514,7 +572,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -543,7 +601,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -572,7 +630,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -601,7 +659,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -630,7 +688,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -659,7 +717,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -688,7 +746,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -717,7 +775,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -746,7 +804,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-05T08:24:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -775,7 +833,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -804,7 +862,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -833,7 +891,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -862,7 +920,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -891,7 +949,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -920,7 +978,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -949,7 +1007,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -978,7 +1036,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1007,7 +1065,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1036,7 +1094,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1065,7 +1123,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-04T07:56:08Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1094,7 +1152,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-03T08:29:25Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1123,7 +1181,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-03T08:29:25Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1152,7 +1210,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-03T08:29:25Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1296,7 +1354,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-03T08:29:25Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1383,7 +1441,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-03T08:29:25Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1586,7 +1644,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-11-02T08:10:23Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -1963,7 +2021,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-30T07:41:22Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -2652,7 +2710,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-10-28T07:17:02Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -2681,7 +2739,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-28T07:17:02Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -4216,7 +4274,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-22T06:31:57Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -4274,7 +4332,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-22T06:31:57Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -4419,7 +4477,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-22T06:31:57Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -4680,7 +4738,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-21T06:29:22Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -7210,7 +7268,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-15T06:20:39Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -7471,7 +7529,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-14T06:38:30Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -7500,7 +7558,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-14T06:38:30Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -7671,10 +7729,10 @@
         "一年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-28T16:00:00Z",
+      "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-14T06:38:30Z",
-      "last_seen_at": "2026-11-02T08:10:23Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -8716,7 +8774,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-10-12T07:55:31Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -9614,7 +9672,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-10T07:41:14Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -10078,7 +10136,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-10-09T07:57:19Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -13550,7 +13608,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-30T07:17:26Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -13579,7 +13637,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-30T07:17:26Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -13782,7 +13840,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-30T07:17:26Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -14939,7 +14997,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-29T07:26:29Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -15315,7 +15373,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-28T07:30:41Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -15980,7 +16038,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-28T07:30:41Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -16038,7 +16096,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-28T07:30:41Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -16792,7 +16850,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-24T06:39:55Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -17109,7 +17167,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-24T06:39:55Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -17484,7 +17542,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-23T06:34:41Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -18180,7 +18238,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-22T06:43:35Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -18296,7 +18354,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-22T06:43:35Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -18960,7 +19018,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -19076,7 +19134,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -19830,7 +19888,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-21T06:59:02Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -20495,7 +20553,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-20T06:51:35Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -21452,7 +21510,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-19T06:29:39Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -21973,7 +22031,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-19T06:29:39Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -22250,7 +22308,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-18T06:31:47Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -22714,7 +22772,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-18T06:31:47Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -22772,7 +22830,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-18T06:31:47Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -23536,7 +23594,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-17T06:35:42Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -25422,10 +25480,10 @@
         "三年以上工作经验"
       ],
       "published_at": null,
-      "updated_at": "2026-10-25T16:00:00Z",
+      "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-16T06:37:33Z",
-      "last_seen_at": "2026-10-28T07:17:02Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -26408,7 +26466,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-15T06:36:56Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -26637,7 +26695,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-15T06:36:56Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -27824,7 +27882,7 @@
       "updated_at": "2026-11-02T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-15T06:36:56Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -28027,7 +28085,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-14T06:55:18Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -30114,7 +30172,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-12T01:14:42Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -30547,7 +30605,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-12T01:14:42Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -30663,7 +30721,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-12T01:14:42Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -30866,7 +30924,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-12T01:14:42Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -30952,7 +31010,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -31008,7 +31066,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -31153,7 +31211,7 @@
       "updated_at": "2026-11-05T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -31731,7 +31789,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -32136,7 +32194,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -32164,7 +32222,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -32481,7 +32539,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -32509,7 +32567,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -33118,7 +33176,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -33232,7 +33290,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -33290,7 +33348,7 @@
       "updated_at": "2026-11-04T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -33576,7 +33634,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
@@ -33720,7 +33778,7 @@
       "updated_at": null,
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "xsolla",
       "source_name": "Xsolla 官网",
       "source_ids": [
@@ -33865,7 +33923,7 @@
       "updated_at": "2026-11-03T16:00:00Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "tencent",
       "source_name": "腾讯招聘",
       "source_ids": [
@@ -33892,7 +33950,7 @@
       "updated_at": "2026-11-04T16:38:51Z",
       "expires_at": null,
       "first_seen_at": "2026-09-11T03:00:49Z",
-      "last_seen_at": "2026-11-06T08:27:14Z",
+      "last_seen_at": "2026-11-07T07:42:28Z",
       "source_id": "flexport",
       "source_name": "Flexport 官网",
       "source_ids": [
