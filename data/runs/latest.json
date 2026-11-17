@@ -1,58 +1,58 @@
 {
   "schema_version": 1,
-  "started_at": "2026-11-16T08:31:02Z",
-  "finished_at": "2026-11-16T08:31:24Z",
+  "started_at": "2026-11-17T09:41:51Z",
+  "finished_at": "2026-11-17T09:42:02Z",
   "mode": "live",
   "status": "partial",
-  "total_jobs": 1240,
+  "total_jobs": 1253,
   "sources": [
     {
       "source_id": "tencent",
       "name": "腾讯招聘",
       "adapter": "tencent",
       "status": "partial",
-      "found": 199,
-      "accepted": 97,
-      "message": "已读取 200 条；无效 1 条；达到页数上限",
+      "found": 200,
+      "accepted": 100,
+      "message": "已读取 200 条；无效 0 条；达到页数上限",
       "coverage": "partial",
       "config_fingerprint": "c7e92cb6471751d48adc",
-      "observed_at": "2026-11-16T08:31:02Z"
+      "observed_at": "2026-11-17T09:41:51Z"
     },
     {
       "source_id": "flexport",
       "name": "Flexport 官网",
       "adapter": "greenhouse",
       "status": "ok",
-      "found": 205,
+      "found": 203,
       "accepted": 8,
-      "message": "已读取 205 条；无效 0 条",
+      "message": "已读取 203 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "e243e05c25bf93901356",
-      "observed_at": "2026-11-16T08:31:02Z"
+      "observed_at": "2026-11-17T09:41:51Z"
     },
     {
       "source_id": "xsolla",
       "name": "Xsolla 官网",
       "adapter": "lever",
       "status": "partial",
-      "found": 185,
+      "found": 186,
       "accepted": 5,
-      "message": "已读取 186 条；无效 1 条",
+      "message": "已读取 187 条；无效 1 条",
       "coverage": "partial",
       "config_fingerprint": "c70b648dec584d176074",
-      "observed_at": "2026-11-16T08:31:02Z"
+      "observed_at": "2026-11-17T09:41:51Z"
     },
     {
       "source_id": "remotive",
       "name": "Remotive",
       "adapter": "remotive",
       "status": "ok",
-      "found": 16,
+      "found": 17,
       "accepted": 7,
-      "message": "已读取 16 条；无效 0 条",
+      "message": "已读取 17 条；无效 0 条",
       "coverage": "partial",
       "config_fingerprint": "86bc35e18fd62717253c",
-      "observed_at": "2026-11-16T08:31:02Z"
+      "observed_at": "2026-11-17T09:41:51Z"
     },
     {
       "source_id": "boss",
